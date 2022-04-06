@@ -76,7 +76,7 @@ Exam_ID 	INT PRIMARY KEY AUTO_INCREMENT,
 `Code`		VARCHAR(50),
 Title 		VARCHAR(100),
 Caregory_ID INT,
-Duration 	VARCHAR(50),
+Duration 	TIME,
 CreatorID 	INT,
 Create_Date DATE
 );
