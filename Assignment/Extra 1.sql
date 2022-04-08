@@ -1,7 +1,7 @@
 -- Exercise 1 --
-DROP DATABASE IF EXISTS Fresher;
-CREATE DATABASE Fresher;
-Use Fresher;
+DROP DATABASE IF EXISTS Extra_1_2;
+CREATE DATABASE Extra_1_2;
+Use Extra_1_2;
 
 CREATE TABLE Student (
 Trainee_ID 			INT PRIMARY KEY AUTO_INCREMENT,

@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS TestingSytemAssignment_2; 
-CREATE DATABASE TestingSytemAssignment_2;
-USE TestingSytemAssignment_2;
+DROP DATABASE IF EXISTS TestingSytemAssignment_3; 
+CREATE DATABASE TestingSytemAssignment_3;
+USE TestingSytemAssignment_3;
 
 /* TABLE_Department */
 CREATE TABLE Department (
@@ -97,4 +97,5 @@ Question_ID INT UNSIGNED,
 FOREIGN KEY(Exam_ID) REFERENCES Exam(Exam_ID),
 FOREIGN KEY(Question_ID)REFERENCES Question(Question_ID)
 );
--- END --
+
+

@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS TestingSystemAssignment1;
-CREATE DATABASE TestingSystemAssignment1;
+DROP DATABASE IF EXISTS TestingSystemAssignment_1_Update;
+CREATE DATABASE TestingSystemAssignment_1_Update;
 
-USE TestingSystemAssignment1;
+USE TestingSystemAssignment_1_Update;
 
 -- TABLE Department --
 CREATE TABLE Department (
