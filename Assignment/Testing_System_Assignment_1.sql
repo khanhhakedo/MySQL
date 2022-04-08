@@ -1,89 +1,104 @@
-DROP DATABASE IF EXISTS TestingSytemAssignment_1; 
-CREATE DATABASE TestingSytemAssignment_1;
-USE TestingSytemAssignment_1;
+DROP DATABASE IF EXISTS TestingSytemAssignment;
+CREATE DATABASE TestingSytemAssignment;
 
-/* TABLE_1 */
+USE TestingSytemAssignment;
+
+-- TABLE Department --
 CREATE TABLE Department (
-Department_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Department_Name VARCHAR(50)
-);
-
-/* TABLE_2 */
-CREATE TABLE `Position` (
-Position_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Position_Name 	VARCHAR(50)
-);
-
-/* TABLE_3 */
-CREATE TABLE `Account` (
-Account_ID 			INT PRIMARY KEY AUTO_INCREMENT,
-Email 				VARCHAR(50),
-Username 			VARCHAR(50),
-Fullname 			VARCHAR(50),
-Department_ID 		INT,
-Position_ID 		INT,
-Create_Date 		DATE
-);
-
-/* TABLE_4 */
+Department_ID 		INT PRIMARY KEY AUTO_INCREMENT,
+ Department_Name 	VARCHAR(50) NOT NULL
+ );
+ 
+ /* TABLE Position */
+ CREATE TABLE `Position` (
+ Position_ID 	INT PRIMARY KEY AUTO_INCREMENT,
+ Position_Name 	ENUM('Dev', 'Test', 'Scrum Master', 'PM') NOT NULL
+ );
+ 
+ -- TABLE Account --
+CREATE Table `Account` (
+Account_ID 		INT PRIMARY KEY AUTO_INCREMENT,
+Email 			VARCHAR(50) NOT NULL,
+User_Name 		VARCHAR(50) NOT NULL,
+Full_Name 		VARCHAR(50) NOT NULL,
+Department_ID 	INT UNIQUE,
+Position_ID 	INT UNIQUE,
+Create_Date 	Date,
+  FOREIGN KEY (Department_ID) REFERENCES Department(Department_ID),
+  FOREIGN KEY (Position_ID) REFERENCES `Position`(Position_ID)
+  );
+ 
+ /* Group */ 
 CREATE TABLE `Group`(
-Group_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Group_NAME 	VARCHAR(100),
-Creator_ID 	INT,
-Create_Date DATE
+Group_ID 		INT PRIMARY KEY AUTO_INCREMENT,
+Group_Name 		VARCHAR(50) UNIQUE NOT NULL, CHECK (LENGTH(Group_Name) >=10),
+Creator_ID 		INT UNIQUE NOT NULL,
+Create_Date 	DATE,
+FOREIGN KEY(Creator_ID) REFERENCES `Account`(Account_ID) 
 );
 
-/* TABLE_5 */
+-- TABLE Group_Account -- 
 CREATE TABLE Group_Account (
-Group_ID 		INT,
-Account_ID	 	INT,
-Join_Date 		DATE
+Group_ID 	INT PRIMARY KEY AUTO_INCREMENT,
+Account_ID 	INT NOT NULL  UNIQUE,
+Join_Date 	DATE,
+FOREIGN KEY (Account_ID) REFERENCES `Account`(Account_ID) 
 );
 
-/* TABLE_6 */
+-- TABLE Type_Question -- 
 CREATE TABLE Type_Question (
 Type_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Type_Name 	VARCHAR(50)
+Type_Name 	ENUM('ESSAY', 'Multiple-Choice') NOT NULL
 );
-
-/* TABLE_7 */
+ 
+ -- TABLE Category_Question --
 CREATE TABLE Category_Question (
 Category_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Category_Name 	VARCHAR(50)
+Category_Name 	VARCHAR(50) NOT NULL
 );
 
-/* TABLE_8 */
+ -- TABLE Question --
 CREATE TABLE Question (
 Question_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Content 		VARCHAR(100),
-Category_ID 	INT,
-Type_ID 		INT,
-Creator_ID 		INT,
-Creator_Date 	DATE
+Content 		VARCHAR(200) NOT NULL UNIQUE,
+Category_ID		INT UNIQUE NOT NULL,
+Type_ID 		INT UNIQUE  NOT NULL,
+Creator_ID 		INT UNSIGNED  NOT NULL,
+Create_Date 	DATE,
+FOREIGN KEY (Category_ID ) REFERENCES Category_Question(Category_ID ),
+FOREIGN KEY (Type_ID) REFERENCES Type_Question ( Type_ID)
 );
 
-/* TABLE_9 */
+ -- TABLE Answer --
 CREATE TABLE Answer (
-Answer_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-Content 	VARCHAR(50),
-Question_ID INT,
-Is_Correct 	BOOLEAN
+Answer_ID 		INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+Content 		VARCHAR(200) NOT NULL CHECK (LENGTH(Content) >=50),
+Question_ID 	INT UNIQUE NOT NULL ,
+Is_Correct 		BOOLEAN NOT NULL,
+FOREIGN KEY (Question_ID) REFERENCES Question(Question_ID)
 );
 
-/* TABLE_10 */
+ -- TABLE Exam --
 CREATE TABLE Exam (
-Exam_ID 	INT PRIMARY KEY AUTO_INCREMENT,
-`Code`		VARCHAR(50),
-Title 		VARCHAR(100),
-Caregory_ID INT,
-Duration 	TIME,
-CreatorID 	INT,
-Create_Date DATE
+Exam_ID 		INT PRIMARY KEY AUTO_INCREMENT,
+`Code` 			INT NOT NULL,
+Title 			VARCHAR(50) NOT NULL,
+Category_ID 	INT NOT NULL,
+Duration 		TIME NOT NULL,
+Creator_ID	 	INT NOT NULL,
+Create_Date 	DATE
 );
 
-/* TABLE_11 */
+-- TABLE Exam_Question --
 CREATE TABLE Exam_Question (
-Exam_ID 	INT,
-Question_ID INT
+Exam_ID 	INT NOT NULL,
+Question_ID INT NOT NULL,
+FOREIGN KEY (Exam_ID) REFERENCES Exam(Exam_ID),
+FOREIGN KEY (Question_ID) REFERENCES Question(Question_ID)
 );
--- END --
+-- End --
+
+
+
+  
+  
