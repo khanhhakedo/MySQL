@@ -72,7 +72,7 @@ FOREIGN KEY(Creator_ID) REFERENCES `Account`(Account_ID)
 /* TABLE_Answer */
 CREATE TABLE Answer (
 Answer_ID 	INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-Content 	VARCHAR(50) NOT NULL,
+Content 	VARCHAR(200) NOT NULL,
 Question_ID INT UNSIGNED NOT NULL,
 Is_Correct 	BOOLEAN NOT NULL,
 FOREIGN KEY(Question_ID) REFERENCES Question(Question_ID)
@@ -91,7 +91,8 @@ FOREIGN KEY(Caregory_ID) REFERENCES Category_Question(Category_ID),
 FOREIGN KEY(Creator_ID) REFERENCES `Account`(Account_ID)  
 );
 
-/* TABLE_Exam_Question */CREATE TABLE Exam_Question (
+/* TABLE_Exam_Question */
+CREATE TABLE Exam_Question (
 Exam_ID 	INT UNSIGNED,
 Question_ID INT UNSIGNED,
 FOREIGN KEY(Exam_ID) REFERENCES Exam(Exam_ID),
