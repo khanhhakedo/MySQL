@@ -1,5 +1,6 @@
 
-USE testingsytemassignment;
+USE TestingSytemAssignment;
+
 -- Exercise 1 --
 
 /* Question 1: Thêm ít nhất 10 record vào mỗi table */
@@ -38,8 +39,8 @@ INSERT INTO `Account` VALUES
 ('7','Quynhnguyen','Nguyen Quynh','7','2','1996-05-12'),
 ('8','Thiennguyen','Nguyen Thien','8','3','1996-06-12'),
 ('9','Hangnguyen','Nguyen Hang','9','4','1996-07-12'),
-('10','Phucnguyen','Phuc Nguyen','10','5','1996-08-12');
-
+('10','Phucnguyen','Phuc Nguyen','10','5','1996-08-12'),
+('11','khanhhakedo123','Nguyen khanh Khanhhakedo','3','3','1996-03-12');
 
 /* TABLE `Group` */
 INSERT INTO `Group` VALUES
@@ -119,43 +120,77 @@ INSERT INTO Exam_Question VALUES
 
 
 /* Question 2:lấy ra tất cả các phòng ban */
-SELECT * FROM Department;
+SELECT * 
+FROM Department;
 
 /* Question 3:lấy ra id của phòng ban "Sale" */
-SELECT Department_ID FROM Department WHERE Department_Name = 'Sale';
+SELECT Department_ID
+ FROM Department 
+ WHERE Department_Name = 'Sale';
 
-/* Question 4:Lấy ra thông tin account có full name dài nhất và thuộc phòng ban có id
-= 3 */
-SELECT *  FROM `Account` WHERE Fullname = (SELECT max (Fullname) From `Account`) ;
+/* Question 4:Lấy ra thông tin account có full name dài nhất  */
+select * 
+from `account` 
+WHERE length(Fullname) = (select max(length(Fullname)) from `Account`);
 
 /* Question 5: Lấy ra thông tin account có full name dài nhất và thuộc phòng ban có id
 = 3 */
-SELECT * FROM `Account` WHERE Fullname = (SELECT max (Fullname) From `Account`) AND SELECT Department_ID FROM Department WHERE Department_ID = '3';
+/* Cach 1 */
+select *
+from `account`
+where department_id = '3'
+order by length(fullname) desc limit 1 offset 1; 
 
-/* Question 6:Lấy ra tên group đã tham gia trước ngày 20/12/2019 */
-?????????
+/* cach 2 */
+select * 
+from `account` 
+WHERE (length(Fullname) = (select max(length(Fullname)) from `Account`)) AND (Department_id = 3);
+
+/* Question 6:Lấy ra tên group đã tham gia trước ngày 20/12/2022 */
+
+select group_name 
+from `group` 
+where Create_Date < '2022-12-20';
 
 /* Question 7:Lấy ra ID của question có >= 4 câu trả lời */
-SELECT Question_ID FROM Answer WHERE Content >= '4';
-????
+SELECT Question_ID, count(Answer_id) 
+ FROM Answer  
+ group by question_id 
+ having count(Answer_id)  >= 4 ;
+
+
+
 /* Question 8:Lấy ra các mã đề thi có thời gian thi >= 60 phút và được tạo trước ngày
 20/12/2019 */
-SELECT `Code` FROM Exam WHERE Duration >= '60:00' AND Create_Date <= '2019-12-20';
+SELECT `Code` 
+FROM Exam 
+WHERE Duration >= '60:00' AND Create_Date <= '2019-12-20';
 
 /* Question 9: Lấy ra 5 group được tạo gần đây nhất */
- SELECT * FROM `Group` ORDER BY Create_Date DESC LIMIT 5;
+ SELECT * 
+ FROM `Group` 
+ ORDER BY Create_Date DESC LIMIT 5;
  
  /* Question 10: Đếm số nhân viên thuộc department có id = 2 */
- ???
+ select count(Department_ID) 
+ from department 
+ WHERE department_id = 2;
+
  
   /* Question 11:Lấy ra nhân viên có tên bắt đầu bằng chữ "D" và kết thúc bằng chữ "o" */
-SELECT * FROM `Account` WHERE Fullname LIKE ('D%O');
+SELECT * 
+FROM `Account` 
+WHERE Fullname LIKE 'D%o';
 
- /* Question 12:Xóa tất cả các exam được tạo trước ngày 20/12/2019 */
-
+ /* Question 12:Xóa tất cả các exam được tạo trước ngày 20/12/2022 */
+ 
+delete from `group` where Create_Date <= '2022/12/20';
 /* Question 13 Xóa tất cả các question có nội dung bắt đầu bằng từ "câu hỏi" */
 
 /* Question 14: Update thông tin của account có id = 5 thành tên "Nguyễn Bá Lộc" và
 email thành loc.nguyenba@vti.com.vn */
-
+UPDATE `account`
+SET Fullname = 'Nguyễn Bá Lộc'
+WHERE Account_ID = 5;
 /* Question 15: Update account có id = 5 sẽ thuộc group có id = 4 */
+UPDATE 
