@@ -31,8 +31,8 @@ INSERT INTO `Position` VALUES
 /* TABLE `Account` */
 INSERT INTO `Account` VALUES
 ('1','Xanhnguyen','Nguyen Van Xanh','1','1','1996-03-12'),
-('2','Tamnguyen','Nguyen Tam','2','2','1996-03-12'),
-('3','Anhnguyen','Nguyen Anh','3','3','1996-05-12'),
+('2','Tamnguyen','Nguyen Tam','1','2','1996-03-12'),
+('3','Anhnguyen','Nguyen Anh','1','3','1996-05-12'),
 ('4','Trungnguyen','Nguyen Trung','4','4','1996-06-12'),
 ('5','Khanhnguyen','Nguyen Khanh','5','5','1996-03-12'),
 ('6','Ducanh','Nguyen Duc Anh','6','1','1996-04-12'),
@@ -41,6 +41,7 @@ INSERT INTO `Account` VALUES
 ('9','Hangnguyen','Nguyen Hang','9','4','1996-07-12'),
 ('10','Phucnguyen','Phuc Nguyen','10','5','1996-08-12'),
 ('11','khanhhakedo123','Nguyen khanh Khanhhakedo','3','3','1996-03-12');
+
 
 /* TABLE `Group` */
 INSERT INTO `Group` VALUES
@@ -146,6 +147,7 @@ select *
 from `account` 
 WHERE (length(Fullname) = (select max(length(Fullname)) from `Account`)) AND (Department_id = 3);
 
+
 /* Question 6:Lấy ra tên group đã tham gia trước ngày 20/12/2022 */
 
 select group_name 
@@ -172,8 +174,8 @@ WHERE Duration >= '60:00' AND Create_Date <= '2019-12-20';
  ORDER BY Create_Date DESC LIMIT 5;
  
  /* Question 10: Đếm số nhân viên thuộc department có id = 2 */
- select count(Department_ID) 
- from department 
+ select count(account_id) 
+ from `account` 
  WHERE department_id = 2;
 
  
@@ -184,13 +186,16 @@ WHERE Fullname LIKE 'D%o';
 
  /* Question 12:Xóa tất cả các exam được tạo trước ngày 20/12/2022 */
  
-delete from `group` where Create_Date <= '2022/12/20';
+delete from Exam  where Create_Date <= '2022/12/20';
 /* Question 13 Xóa tất cả các question có nội dung bắt đầu bằng từ "câu hỏi" */
-
+delete from `question` WHERE Content like 'câu hỏi%';
 /* Question 14: Update thông tin của account có id = 5 thành tên "Nguyễn Bá Lộc" và
 email thành loc.nguyenba@vti.com.vn */
 UPDATE `account`
 SET Fullname = 'Nguyễn Bá Lộc'
 WHERE Account_ID = 5;
 /* Question 15: Update account có id = 5 sẽ thuộc group có id = 4 */
-UPDATE 
+UPDATE Group_Account 
+SET Group_ID = '4'
+WHERE Account_ID = '5';
+
