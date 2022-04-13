@@ -15,14 +15,14 @@ VALUE		('1','Nguyen A', '1996-03-12', 'Male','10', '15', '30', 'A1','NULL','VTI1
             ('10','Nguyen ABC','1995-03-05','Female','15','19','45','D1','NULL','VTI10');
             
 -- Question 2: Viết lệnh để lấy ra tất cả các thực tập sinh đã vượt qua bài test đầu vào, nhóm chúng thành các tháng sinh khác nhau --
-???
-SELECT *, month(Birth_Date)
+select * from student;
+SELECT *
 FROM Student
-GROUP BY MONTH(Birth_Date );
+ORDER BY MONTH(Birth_Date ) ASC;
 
 -- Question 3: Viết lệnh để lấy ra thực tập sinh có tên dài nhất, lấy ra các thông tin sau: tên, tuổi, các thông tin cơ bản (như đã được định nghĩa trong table) --
 
-SELECT * 
+SELECT *, (year(now()) - year(birth_date)) as age
 FROM Student
 WHERE length(Full_name) = (SELECT max(length(Full_name)) From Student);
 
@@ -44,6 +44,7 @@ AND (ET_English >= 18);
 -- Question 5: xóa thực tập sinh có TraineeID = 3 --
 DELETE FROM Student 
 WHERE Trainee_ID = 3;
+
 
 -- Question 6: Thực tập sinh có TraineeID = 5 được chuyển sang lớp "2". Hãy cập nhật thông tin vào database --
 UPDATE Student
