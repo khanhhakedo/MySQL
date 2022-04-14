@@ -6,9 +6,6 @@ join Department d on d.DEpartment_id = a.department_id;
 -- Question 2: Viết lệnh để lấy ra thông tin các account được tạo sau ngày 20/12/2010
 
 
-
-
-
 -- lấy ra danh sach nhân viên chưa có phòng ban
 select * from `account` a
 left join department d on a.Department_ID = d.Department_ID
@@ -17,8 +14,6 @@ union
 select * from `account` a
 right join department d on a.Department_ID = d.Department_ID;
 -- where a.Department_ID is null;
-
-
 
 
 -- Question 3: Viết lệnh để lấy ra thông tin của các nhân viên có chức vụ developer(DEV)
@@ -46,6 +41,7 @@ select b.Question_ID,a.Content, count(b.Question_ID) as Soluong from question a
 					join exam_question b
 					on a.Question_ID = b.Question_ID
 					GROUP BY b.Question_ID) as abc)
+                    
 
 
 

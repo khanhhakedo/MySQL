@@ -98,6 +98,6 @@ Question_ID INT UNSIGNED,
 FOREIGN KEY(Exam_ID) REFERENCES Exam(Exam_ID),
 FOREIGN KEY(Question_ID)REFERENCES Question(Question_ID)
 );
--- END --
+/* END */
 
 
