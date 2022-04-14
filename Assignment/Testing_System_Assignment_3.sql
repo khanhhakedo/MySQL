@@ -10,7 +10,7 @@ INSERT INTO Department (Department_Name) VALUES
 ('Marketing'),
 ('Sale'),
 ('Bao ve'),
-('Nhan su'),
+('Nhan su1'),
 ('Ky thuat'),
 ('Ve sinh'),
 ('Du an'),
