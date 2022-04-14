@@ -10,7 +10,7 @@ INSERT INTO Department (Department_Name) VALUES
 ('Marketing'),
 ('Sale'),
 ('Bao ve'),
-('Nhan su1'),
+('Nhan su'),
 ('Ky thuat'),
 ('Ve sinh'),
 ('Du an'),
@@ -30,9 +30,9 @@ INSERT INTO `Position` VALUES
 
 /* TABLE `Account` */
 INSERT INTO `Account` VALUES
-('1','Xanhnguyen','Nguyen Van Xanh','1','1','1996-03-12'),
-('2','Tamnguyen','Nguyen Tam','1','2','1996-03-12'),
-('3','Anhnguyen','Nguyen Anh','1','3','1996-05-12'),
+('1','Xanhnguyen','Nguyen Van Xanh',null,'1','1996-03-12'),
+('2','Tamnguyen','Nguyen Tam','2','2','1996-03-12'),
+('3','Anhnguyen','Nguyen Anh','2','3','1996-05-12'),
 ('4','Trungnguyen','Nguyen Trung','4','4','1996-06-12'),
 ('5','Khanhnguyen','Nguyen Khanh','5','5','1996-03-12'),
 ('6','Ducanh','Nguyen Duc Anh','6','1','1996-04-12'),
@@ -113,8 +113,8 @@ INSERT INTO Exam VALUES
 
 /* TABLE Exam */
 INSERT INTO Exam_Question VALUES
-('1','5'),
-('2','3'),
+('1','1'),
+('2','2'),
 ('3','4'),
 ('4','1'),
 ('5','2');

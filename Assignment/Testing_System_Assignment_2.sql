@@ -19,7 +19,7 @@ CREATE TABLE `Account` (
 Account_ID 			INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
 Username 			VARCHAR(50) UNIQUE CHECK (LENGTH(Username) >=6) NOT NULL,
 Fullname 			VARCHAR(50) NOT NULL,
-Department_ID 		INT UNSIGNED NOT NULL, 
+Department_ID 		INT UNSIGNED , 
 Position_ID 		INT UNSIGNED NOT NULL,
 Create_Date 		DATE,
 FOREIGN KEY(Department_ID) REFERENCES Department(Department_ID),
@@ -99,3 +99,5 @@ FOREIGN KEY(Exam_ID) REFERENCES Exam(Exam_ID),
 FOREIGN KEY(Question_ID)REFERENCES Question(Question_ID)
 );
 -- END --
+
+

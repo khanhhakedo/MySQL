@@ -32,7 +32,7 @@ ID 				MEDIUMINT PRIMARY KEY AUTO_INCREMENT,
 `Name` 			VARCHAR(50) NOT NULL,
 Birth_Date 		DATE NOT NULL,
 Gender 			ENUM('0','1','NULL') ,
-Is_Delete_Flag 	ENUM('0','1') NOT NULL 
+Is_Delete_Flag 	ENUM('0','1') 
 );
-
+ -- END --
 
