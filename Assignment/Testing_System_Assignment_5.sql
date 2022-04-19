@@ -3,7 +3,8 @@ USE testingsystem;
 -- Exercise 1: Tiếp tục với Database Testing System (Sử dụng subquery hoặc CTE)
 
 -- Question 1: Tạo view có chứa danh sách nhân viên thuộc phòng ban sale
-CREATE VIEW SALE AS
+-- tao VIEW
+CREATE VIEW VIEW_SALE AS
 SELECT A.*
 FROM `Account` A , Department D
 WHERE A.DepartmentID = D.DepartmentID  
@@ -13,10 +14,22 @@ AND  A.AccountID IN (SELECT A1.AccountID
 							ON A1.DepartmentID = D1.DepartmentID 
 							WHERE D1.DepartmentName ='Sale'); 
 
+-- Tao CTE
+WITH CTE_AccountID AS (
+SELECT A1.AccountID
+	FROM `Account` A1
+	JOIN Department D1
+	ON A1.DepartmentID = D1.DepartmentID 
+	WHERE D1.DepartmentName ='Sale')
+SELECT A.*
+FROM `Account` A , Department D
+WHERE A.DepartmentID = D.DepartmentID  
+AND  A.AccountID IN (SELECT * FROM CTE_AccountID);
+
 
 -- Question 2: Tạo view có chứa thông tin các account tham gia vào nhiều group nhất
-
-CREATE VIEW ThongTinAccount AS
+-- tao VIEW
+CREATE VIEW VIEW_ThongTinAccount AS
 SELECT A.*, COUNT(A.AccountID) AS SoGroup
 FROM `ACCOUNT` A
 JOIN GroupAccount GA
@@ -26,6 +39,20 @@ HAVING  COUNT(A.AccountID) = (SELECT COUNT(GA.ACCOUNTID)
 								FROM GroupAccount GA
 								GROUP BY GA.GroupID
 								ORDER BY COUNT(GA.ACCOUNTID) DESC LIMIT 1);
+                                
+-- tao CTE
+WITH CTE_COUNT_AccountID AS (
+SELECT COUNT(GA.ACCOUNTID)
+		FROM GroupAccount GA
+		GROUP BY GA.GroupID
+		ORDER BY COUNT(GA.ACCOUNTID) DESC LIMIT 1)
+SELECT A.*, COUNT(A.AccountID) AS SoGroup
+FROM `ACCOUNT` A
+JOIN GroupAccount GA
+ON A.AccountID = GA.AccountID
+GROUP BY GA.GroupID
+HAVING  COUNT(A.AccountID) = (SELECT * FROM CTE_COUNT_AccountID); 
+
 
 
 /* Question 3: Tạo view có chứa câu hỏi có những content quá dài (content quá 300 từ

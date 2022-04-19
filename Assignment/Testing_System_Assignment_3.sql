@@ -75,7 +75,8 @@ DELETE FROM exam WHERE CreateDate < '2019/12/20';
 
 
 /* Question 13 Xóa tất cả các question có nội dung bắt đầu bằng từ "câu hỏi" */
- DELETE FROM Answer;
+ DELETE FROM Answer WHERE QuestionID IN 	(SELECT QuestionID FROM `Question`
+										WHERE Content LIKE "Cau hoi%");
 DELETE FROM Question
 WHERE Content LIKE "Cau hoi%";
 

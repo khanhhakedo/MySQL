@@ -59,9 +59,10 @@ GROUP BY Q.CategoryID;
 
 
 -- Question 7: Thông kê mỗi Question được sử dụng trong bao nhiêu Exam
-SELECT QuestionID, COUNT(ExamID) SoLanSuDungTRongDeThi
-FROM ExamQuestion
-GROUP BY QuestionID;
+SELECT Q.QuestionID, COUNT(ExamID) SoLanSuDungTRongDeThi
+FROM ExamQuestion EQ
+RIGHT JOIN Question Q ON EQ.QuestionID = Q.QuestionID
+GROUP BY Q.QuestionID;
 
 
 -- Question 8: Lấy ra Question có nhiều câu trả lời nhất
@@ -80,10 +81,10 @@ HAVING COUNT(AnswerID) = (SELECT COUNT(AnswerID)FROM Answer GROUP BY QuestionID 
 
 
 -- Question 9: Thống kê số lượng account trong mỗi group
-SELECT (G.GroupID) AS IDPhongBan, COUNT(A.AccountID) AS SoNhanVien
+SELECT (G.GroupID) AS IDPhongBan, COUNT(GA.AccountID) AS SoNhanVien
 FROM `Group` G
-LEFT JOIN GroupAccount A
-ON G.GroupID = A.GroupID
+LEFT JOIN GroupAccount GA
+ON G.GroupID = GA.GroupID
 GROUP BY( G.GroupID);
 
 
@@ -113,7 +114,6 @@ FROM `account` A
 RIGHT JOIN department D ON A.DepartmentID = D.DepartmentID
 LEFT JOIN position P ON A.PositionID = P.PositionID
 GROUP BY D.DepartmentID, P.PositionID;
-
 
 
 -- Question 12: Lấy thông tin chi tiết của câu hỏi bao gồm: thông tin cơ bản question, loại câu hỏi, ai là người tạo ra câu hỏi, câu trả lời là gì, …
@@ -157,13 +157,33 @@ WHERE A.QuestionID IS NULL;
 
 Exercise 2: Union
 Question 17:
-a) Lấy các account thuộc nhóm thứ 1
-b) Lấy các account thuộc nhóm thứ 2
-c) Ghép 2 kết quả từ câu a) và câu b) sao cho không có record nào trùng nhau
-Question 18:
-a) Lấy các group có lớn hơn 5 thành viên
-b) Lấy các group có nhỏ hơn 7 thành viên
-c) Ghép 2 kết quả từ câu a) và câu b)
+-- a) Lấy các account thuộc nhóm thứ 1
+SELECT *
+FROM `Account`
+WHERE DepartmentID = 1;
+
+
+-- b) Lấy các account thuộc nhóm thứ 2
+SELECT *
+FROM `Account`
+WHERE DepartmentID = 2;
+-- c) Ghép 2 kết quả từ câu a) và câu b) sao cho không có record nào trùng nhau
+SELECT A.*, GA.GroupID
+FROM `Account` A
+JOIN `GroupAccount` GA On A.AccountID = GA.AccountID
+WHERE GA.GroupID =1
+
+UNION
+
+SELECT A.*, GA.GroupID
+FROM `Account` A
+JOIN `GroupAccount` GA On A.AccountID = GA.AccountID
+WHERE GA.GroupID =2;
+-- Question 18:
+
+-- a) Lấy các group có lớn hơn 5 thành viên
+-- b) Lấy các group có nhỏ hơn 7 thành viên
+-- c) Ghép 2 kết quả từ câu a) và câu b)
 
 
                     
