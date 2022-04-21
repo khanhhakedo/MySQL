@@ -155,13 +155,13 @@ LEFT JOIN `Answer` A
 ON Q.QuestionID = A.QuestionID
 WHERE A.QuestionID IS NULL;
 
-Exercise 2: Union
-Question 17:
+-- Exercise 2: Union
+
+-- Question 17:
 -- a) Lấy các account thuộc nhóm thứ 1
 SELECT *
 FROM `Account`
 WHERE DepartmentID = 1;
-
 
 -- b) Lấy các account thuộc nhóm thứ 2
 SELECT *
@@ -179,12 +179,34 @@ SELECT A.*, GA.GroupID
 FROM `Account` A
 JOIN `GroupAccount` GA On A.AccountID = GA.AccountID
 WHERE GA.GroupID =2;
+
+
 -- Question 18:
-
 -- a) Lấy các group có lớn hơn 5 thành viên
--- b) Lấy các group có nhỏ hơn 7 thành viên
--- c) Ghép 2 kết quả từ câu a) và câu b)
 
+SELECT GroupID, COUNT(AccountID) AS SoNhanVien
+FROM GroupAccount
+GROUP BY GroupID
+HAVING COUNT(AccountID) >5;
+
+-- b) Lấy các group có nhỏ hơn 7 thành viên
+SELECT GroupID, COUNT(AccountID) AS SoNhanVien
+FROM GroupAccount
+GROUP BY GroupID
+HAVING COUNT(AccountID) <7;
+
+-- c) Ghép 2 kết quả từ câu a) và câu b)
+SELECT GroupID, COUNT(AccountID) AS SoNhanVien
+FROM GroupAccount
+GROUP BY GroupID
+HAVING COUNT(AccountID) >5
+
+UNION 
+
+SELECT GroupID, COUNT(AccountID) AS SoNhanVien
+FROM GroupAccount
+GROUP BY GroupID
+HAVING COUNT(AccountID) <7;
 
                     
 

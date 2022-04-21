@@ -13,12 +13,13 @@ WHERE D.DepartmentName = Input_DepartmentName;
 END$$
 DELIMITER ;
 
+CALL Account_DepartmentName('Sale');
 
 -- Question 2: Tạo store để in ra số lượng account trong mỗi group
 
 DROP PROCEDURE IF EXISTS Account_Group;
 DELIMITER $$
-CREATE PROCEDURE Account_Group (IN Input_Group NVARCHAR(50))
+CREATE PROCEDURE Account_Group (IN Input_GroupID NVARCHAR(50), IN Input_GroupName NVARCHAR(50))
 BEGIN
 WITH COUNT_Group AS (
 SELECT G.GroupID, G.Groupname,COUNT(A.AccountID) AS SoLuong
@@ -28,14 +29,9 @@ RIGHT JOIN `Group` G ON G.GroupID = GA.GroupID
 GROUP BY G.GroupID)
 
 SELECT *
-FROM COUNT_Group
-WHERE GroupID = Input_Group
+FROM COUNT_Group CG
+WHERE(CG.GroupID = Input_GroupID)  OR (CG.GroupName = Input_GroupName) ;
 
-UNION 
-
-SELECT *
-FROM COUNT_Group
-WHERE GroupName LIKE CONCAT('%',Input_Group,'%');
 END$$
 DELIMITER ;
 
@@ -87,13 +83,8 @@ JOIN `Account` A ON A.AccountID = G.CreatorID)
 
 SELECT GroupID, AccountID
 FROM Account_Group
-WHERE GroupName LIKE CONCAT("%",Input_GroupName_AccountID,"%")
+WHERE (GroupName LIKE CONCAT("%",Input_GroupName_AccountID,"%")) OR (UserName LIKE CONCAT("%",Input_GroupName_AccountID,"%"));
 
-UNION 
-
-SELECT GroupID, AccountID
-FROM Account_Group
-WHERE UserName LIKE CONCAT("%",Input_GroupName_AccountID,"%");
 END$$
 DELIMITER ;
 
@@ -103,6 +94,25 @@ username sẽ giống email nhưng bỏ phần @..mail đi
 positionID: sẽ có default là developer
 departmentID: sẽ được cho vào 1 phòng chờ
 Sau đó in ra kết quả tạo thành công */
+
+-- parameter:  fullName, email(nguyenkhanh@gmail.com)
+-- username sẽ giống email nhưng bỏ phần @..mail đi(nguyenkhanh)
+-- positionID: sẽ có default là developer(dev) (DEFAULT 1)
+-- departmentID: sẽ được cho vào 1 phòng chờ (DEFAULT 10)
+DROP PROCEDURE IF EXISTS Question_7 ;
+DELIMITER $$
+CREATE PROCEDURE Question_7 (IN In_Full_name NVARCHAR(50), IN IN_Email NVARCHAR(50) )
+BEGIN
+DECLARE v_user_name NVARCHAR(50) DEFAULT substring_index(IN_Email,'@',1);
+DECLARE v_positionID TINYINT DEFAULT 1;	
+DECLARE v_departmentID TINYINT DEFAULT 10;	
+DECLARE v_Createdate DATE DEFAULT NOW() ;	
+
+INSERT INTO `Account` VALUE (IN_Email,v_user_name,In_Full_name,v_departmentID,v_positionID,v_Createdate);
+
+END$$
+DELIMITER ;
+
 
 
 -- Question 8: Viết 1 store cho phép người dùng nhập vào Essay hoặc Multiple-Choice để thống kê câu hỏi essay hoặc multiple-choice nào có content dài nhất
