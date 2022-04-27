@@ -218,6 +218,8 @@ SELECT GA.GroupID, COUNT(GA.GroupID), CASE
  END AS the_number_user_amount
 FROM groupaccount GA 
 GROUP BY GA.GroupID;
+
+
 -- Question 14: Thống kê số mỗi phòng ban có bao nhiêu user, nếu phòng ban nào không có user thì sẽ thay đổi giá trị 0 thành "Không có User"
 SELECT D.DepartmentName, CASE 
 WHEN COUNT(A.DepartmentID) = 0 THEN 'Không có User' 
