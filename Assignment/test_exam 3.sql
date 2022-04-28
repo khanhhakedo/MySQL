@@ -83,15 +83,14 @@ WHERE DT.Ten_Dt = 'Cong nghe sinh hoc';
 mã số, họ tên và tên đề tài 
 (Nếu sinh viên chưa có đề tài thì column tên đề tài sẽ in ra "Chưa có") */
 
+
 DROP VIEW IF EXISTS SV_Lamdetai;
 CREATE VIEW SV_Lamdetai AS 
-SELECT SV.Ma_Sv, SV.Hoten,DT.Ten_Dt,DT.Ma_Dt
+SELECT SV.Ma_Sv, SV.Hoten,DT.Ma_Dt, (CASE 	WHEN DT.Ten_Dt IS NULL  THEN 'Chưa có'
+											ELSE DT.Ten_Dt END ) AS tendetai
 FROM HuongDan HD 
 RIGHT JOIN SinhVien SV ON SV.Ma_Sv = HD.Ma_Sv
 LEFT JOIN DeTai DT ON DT.Ma_Dt = HD.Ma_Dt;
-
- UPDATE SV_Lamdetai SET Ten_Dt = 'Chưa có' 
- WHERE Ma_Dt =NULL;
  
 /* 4. Tạo trigger cho table SinhVien khi insert sinh viên có năm sinh <= 1900 
 thì hiện ra thông báo "năm sinh phải > 1900" */
@@ -127,3 +126,8 @@ END$$
 DELIMITER ;
 
 call  P_Cau5 ('4');
+-- cach 1 -- 
+ALTER TABLE HuongDan
+DROP FOREIGN KEY Ma_Sv;
+ALTER TABLE HuongDan
+ADD CONSTRAINT FK_SV FOREIGN KEY (Ma_Sv) REFERENCES SinhVien(Ma_Sv) ON DELETE CASCADE ;
