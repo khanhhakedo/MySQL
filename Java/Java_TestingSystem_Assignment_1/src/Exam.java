@@ -8,6 +8,6 @@ byte code;
 String title;
 CategoryQuestion category_ID;
 LocalTime duration;
-Account creator_ID;
+Account creator_Id;
 Date createDate;
 }

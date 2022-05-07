@@ -113,16 +113,19 @@ public class Program {
 	groupAccount1.group_ID = group1;
 	Account [] groupAccount1s = {account1,account3,account4};
 	groupAccount1.accountIDs = groupAccount1s;
+	groupAccount1.joinDates = new Date("2022/05/08");
 	
 	GroupAccount groupAccount2 = new GroupAccount();
 	groupAccount2.group_ID = group2;
 	Account [] groupAccount2s = {account2,account3,account4};
 	groupAccount2.accountIDs = groupAccount2s;
+	groupAccount2.joinDates = new Date("2022/05/09");
 	
 	GroupAccount groupAccount3 = new GroupAccount();
 	groupAccount3.group_ID = group3;
 	Account [] groupAccount3s = {account1,account4,account5};
 	groupAccount3.accountIDs = groupAccount3s;
+	groupAccount3.joinDates = new Date("2022/05/05");
 	
 	// TypeQuestion
 	TypeQuestion typeQuestion1 = new TypeQuestion();
@@ -221,7 +224,7 @@ public class Program {
 	exam1.code = 1;
 	exam1.title = "xa hoi";
 	exam1.duration = LocalTime.of(0, 50, 30, 0);
-	exam1.creator_ID = account2;
+	exam1.creator_Id = account1;
 	exam1.createDate = new Date("2022/01/01");
 	
 	Exam exam2 = new Exam();
@@ -229,7 +232,7 @@ public class Program {
 	exam2.code = 2;
 	exam2.title = "tu nhien";
 	exam2.duration =LocalTime.of(0, 45, 30, 0);;
-	exam2.creator_ID = account4;
+	exam2.creator_Id = account2;
 	exam2.createDate = new Date("2022/01/02");
 	
 	Exam exam3 = new Exam();
@@ -237,7 +240,7 @@ public class Program {
 	exam3.code = 3;
 	exam3.title = "lich su";
 	exam3.duration =LocalTime.of(0, 55, 30, 0);;
-	exam3.creator_ID = account5;
+	exam3.creator_Id = account4;
 	exam3.createDate = new Date("2022/01/03");
 	
 	// ExamQuestion
@@ -444,7 +447,7 @@ public class Program {
 	System.out.println("Title: " + exam1.title);
 	System.out.println("CategoryID: " + exam1.category_ID);
 	System.out.println("Duration: " + exam1.duration);
-	System.out.println("CreatorID: " + exam1.creator_ID.accountId);
+	System.out.println("CreatorID: " + exam1.creator_Id.accountId);
 	System.out.println("CreateDate: " + exam1.createDate);
 	System.out.println("\n");
 	
@@ -454,7 +457,7 @@ public class Program {
 	System.out.println("Title: " + exam2.title);
 	System.out.println("CategoryID: " + exam2.category_ID);
 	System.out.println("Duration: " + exam2.duration);
-	System.out.println("CreatorID: " + exam2.creator_ID.accountId);
+	System.out.println("CreatorID: " + exam2.creator_Id.accountId);
 	System.out.println("CreateDate: " + exam2.createDate);
 	System.out.println("\n");
 	
@@ -464,9 +467,10 @@ public class Program {
 	System.out.println("Title: " + exam3.title);
 	System.out.println("CategoryID: " + exam3.category_ID);
 	System.out.println("Duration: " + exam3.duration);
-	System.out.println("CreatorID: " + exam3.creator_ID.accountId);
+	System.out.println("CreatorID: " + exam3.creator_Id.accountId);
 	System.out.println("CreateDate: " + exam3.createDate);
 	System.out.println("\n");
+	
 	
 	// ExamQuestion
 	
