@@ -1,12 +1,13 @@
-import java.time.LocalDate;
+
 import java.time.LocalTime;
+import java.util.Date;
 
 public class Exam {
 byte examId;
 byte code;
 String title;
-CategoryQuestion categoryId;
-LocalTime dueation;
-Account creatorId;
-LocalDate createDate;
+CategoryQuestion category_ID;
+LocalTime duration;
+Account creator_ID;
+Date createDate;
 }

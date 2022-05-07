@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public class GroupAccount {
-	Group groupId;
-	Account[] accountIds;
+	Group group_ID;
+	Account[] accountIDs;
 	Date[] joinDates;
 }
