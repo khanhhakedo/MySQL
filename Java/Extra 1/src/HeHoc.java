@@ -1,7 +1,7 @@
 
 public class HeHoc {
 int IDBacHoc;
-String tenBacHoc;
+tenBacHoc tenBacHoc;
 thoigiandaotao thoigiandaotao;
 sotinchitichluy sotinchitichluy;
 }
