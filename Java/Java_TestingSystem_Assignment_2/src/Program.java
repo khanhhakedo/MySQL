@@ -51,6 +51,7 @@ public class Program {
 	account1.fullName = "nguyen khanh 1";
 	account1.departmentID = department1;
 	account1.positionID = position1;
+	
 	account1.createDate = new Date("2022/12/03");
 
 	Account account2 = new Account();
@@ -113,16 +114,16 @@ public class Program {
 	account1.groups = group1s;
 	
 	Group [] group2s = {group1,group2,group3};
-	account2.groups = group2s;
+	account1.groups = group2s;
 	
 	Group [] group3s = {group1};
-	account3.groups = group3s;
+	account1.groups = group3s;
 	
 	Group [] group4s = {group3};
-	account4.groups = group4s;
+	account1.groups = group4s;
 	
 	Group [] group5s = {group2,group3};
-	account5.groups = group5s;
+	account1.groups = group5s;
 	
 	//groupAccount
 	GroupAccount groupAccount1 = new GroupAccount();
@@ -318,8 +319,7 @@ public class Program {
 	System.out.println("FullName: " + account1.fullName);
 	System.out.println("DepartmentId: " + account1.departmentID.departmentId);
 	System.out.println("Position: " + account1.positionID.positionId);
-	for (Group Group1 : group1s ) {	
-		System.out.println("GroupID: " + Group1.groupId);}
+	// System.out.println("Group: " + account1.groups);
 	System.out.println("CreateDate: " + account1.createDate);
 	System.out.println("\n");
 	
@@ -330,8 +330,7 @@ public class Program {
 	System.out.println("FullName: " + account2.fullName);
 	System.out.println("DepartmentId: " + account2.departmentID.departmentId);
 	System.out.println("Position: " + account2.positionID.positionId);
-	for(Group Group2 : group2s) {
-		System.out.println("GroupID: " + Group2.groupId);}
+	// System.out.println("Group: " + account2.groups);
 	System.out.println("CreateDate: " + account2.createDate);
 	System.out.println("\n");
 	
@@ -342,8 +341,7 @@ public class Program {
 	System.out.println("FullName: " + account3.fullName);
 	System.out.println("DepartmentId: " + account3.departmentID.departmentId);
 	System.out.println("Position: " + account3.positionID.positionId);
-	for(Group Group3 : group3s) {
-		System.out.println("GroupID: " + Group3.groupId);}
+	// System.out.println("Group: " + account3.groups);
 	System.out.println("CreateDate: " + account3.createDate);
 	System.out.println("\n");
 	
@@ -372,22 +370,19 @@ public class Program {
 	// GroupAccount
 	System.out.println("Thong tin GroupAccount1:");
 	System.out.println("GroupID: " + groupAccount1.group_ID.groupId);
-	for(Account Account1 : groupAccount1s) {
-		System.out.println("AccountID: " +Account1.accountId);}
+	// System.out.println("AccountID: " + groupAccount1.Account.accountId);
 	System.out.println("JoinDate: " + groupAccount1.joinDates);
 	System.out.println("\n");
 	
 	System.out.println("Thong tin GroupAccount2:");
 	System.out.println("GroupID: " + groupAccount2.group_ID.groupId);
-	for(Account Account2 : groupAccount2s) {
-		System.out.println("AccountID: " +Account2.accountId);}
+	//System.out.println("AccountID: " + groupAccount2.Account.accountId);
 	System.out.println("JoinDate: " + groupAccount2.joinDates);
 	System.out.println("\n");
 	
 	System.out.println("Thong tin GroupAccount3:");
 	System.out.println("GroupID: " + groupAccount3.group_ID.groupId);
-	for(Account Account3 : groupAccount3s) {
-		System.out.println("AccountID: " +Account3.accountId);}
+	//System.out.println("AccountID: " + groupAccount3.Account.accountId);
 	System.out.println("JoinDate: " + groupAccount3.joinDates);
 	System.out.println("\n");
 	
@@ -504,20 +499,17 @@ public class Program {
 	
 	System.out.println("Thong tin ExamQuestion1:");
 	System.out.println("ExamID: " + examQuestion1.exam_ID.examId );
-	for(Question Question1 : questionId1s) {
-		System.out.println("QuestionID: " + Question1.questionId);}
+	//System.out.println("QuestionID: " + examQuestion1.questionIDs);
 	System.out.println("\n");
 	
 	System.out.println("Thong tin ExamQuestion2:");
 	System.out.println("ExamID: " + examQuestion2.exam_ID.examId );
-	for(Question Question2 : questionId2s) {
-		System.out.println("QuestionID: " + Question2.questionId);}
+	//System.out.println("QuestionID: " + examQuestion2.questionIDs);
 	System.out.println("\n");
 	
 	System.out.println("Thong tin ExamQuestion3:");
 	System.out.println("ExamID: " + examQuestion3.exam_ID.examId );
-	for(Question Question3 : questionId3s) {
-		System.out.println("QuestionID: " + Question3.questionId);}
+	//System.out.println("QuestionID: " + examQuestion3.questionIDs);
 	System.out.println("\n");
 	}
 }
