@@ -1,6 +1,6 @@
 
 
 public class Position {
-int positionId;
-positionName positionName;
+	int positionId;
+	positionName positionName;
 }

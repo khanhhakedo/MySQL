@@ -325,10 +325,10 @@ public class DateFomat {
 			
 			/* Question 5:
 				Chỉ in ra "MM-DD" của create date trong Question 2 */
-//			String pattern = "MM-dd";
-//			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-//			String dateQuestion2 = simpleDateFormat.format(question2.createDate);
-//			System.out.println(dateQuestion2);
+			String pattern = "MM-dd";
+			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+			String dateQuestion2 = simpleDateFormat.format(question2.createDate);
+			System.out.println(dateQuestion2);
 			
 	}
 }

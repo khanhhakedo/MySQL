@@ -1,5 +1,5 @@
 
 public class TypeQuestion {
-byte typeId;
-TypeName typeName;
+	byte typeId;
+	TypeName typeName;
 }

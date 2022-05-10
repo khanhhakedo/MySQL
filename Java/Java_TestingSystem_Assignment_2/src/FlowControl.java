@@ -574,10 +574,49 @@ public static void main(String[] args) {
 //			i++;
 //		}
 		
-		
+			/* Question 12:
+			Chỉ in ra thông tin 2 department đầu tiên theo định dạng như Question 10 */
+			
+//			Department[] departments = {department1,department2,department3,department4,department5};
+//			int i = 0;
+//			while (i < departments.length) {
+//				if (i < departments.length) {
+//					if (i == 2) {
+//						break;
+//					}
+//					System.out.println("DepartmentID: " + departments[i].departmentId);
+//				}
+//				i++;
+//			}
+
+
+	    
 		// DO-WHILE
 		/* Question 17:
 		Làm lại các Question ở phần FOR bằng cách sử dụng DO-WHILE kết hợp với lệnh break, continue */
+		
+				/* Question 11:
+				In ra thông tin các phòng ban bao gồm: id và name theo định dạng sau:
+				Thông tin department thứ 1 là:
+				Id: 1
+				Name: Sale
+				Thông tin department thứ 2 là:
+				Id: 2
+				Name: Marketing */
+			
+//			Department[] departments = {department1,department2,department3};
+//			int i = 0;
+//			
+//			do {if ( i == 1) {
+//				break;
+//			}
+//				System.out.println(departments[i].departmentId);
+//				i++;
+//			} while (i < departments.length);
+		
+			
+			
+		
 }
 	
 }

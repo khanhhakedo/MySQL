@@ -1,5 +1,5 @@
 
 public class CategoryQuestion {
-int categoryId;
-String categoryName;
+	int categoryId;
+	String categoryName;
 }

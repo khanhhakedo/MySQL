@@ -1,4 +1,5 @@
 
+import java.security.PublicKey;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
@@ -377,49 +378,72 @@ public class InputFromConsole {
 //			Sau đó chương trình sẽ chọn ngẫu nhiên 1 group
 //			Bước 4:
 //			Thêm account vào group chương trình vừa chọn ngẫu nhiên
-//		Question5();
+		Question5();
+//		Question6();
 		
-//		}
-//	public static void Question5() {
-//		Scanner scanner = new Scanner(System.in);
-//		Account account = new Account();
-//		System.out.print("Nhap vao AccountID: ");
-//		account.accountId = scanner.nextInt();
-//		
-//		System.out.print("Moi ban nhap vao Email: ");
-//		account.email = scanner.next();
-//		
-//	
-//		System.out.print("Moi ban nhap vao PositionID: ");
-//		
-//		int PositionID = scanner.nextInt();
-//		
-//		switch (PositionID) {
-//		case 1:
-//			Position position6 = new Position();
-//			position6.positionName = positionName.DEV;
-//			account.positionID = position6; 
-//			break;
-//		case 2:
-//			Position position7 = new Position();
-//			position7.positionName = positionName.TEST;
-//			account.positionID = position7; 
-//			break;
-//		case 3:
-//			Position position8 = new Position();
-//			position8.positionName = positionName.SCRUM_MASTER;
-//			account.positionID = position8; 
-//			break;
-//		case 4:
-//			Position position9 = new Position();
-//			position9.positionName = positionName.PM;
-//			account.positionID = position9; 
-//			break;
-//			
-//		}
-//		System.out.printf("%s %n %n", "-----------------------------------" );
-//		System.out.println("AccountID cua ban la: " +account.accountId);
-//		System.out.println( "Email cua ban la: "+ account.email);
-//		System.out.println( "PositionName: "+ account.positionID.positionName);
+		}
+	public static void Question5() {
+		Scanner scanner = new Scanner(System.in);
+		Account account = new Account();
+		System.out.print("Nhap vao AccountID: ");
+		account.accountId = scanner.nextInt();
+		
+		System.out.print("Moi ban nhap vao Email: ");
+		account.email = scanner.next();
+		
+	
+		System.out.print("Moi ban nhap vao PositionID: ");
+		
+		int PositionID = scanner.nextInt();
+		
+		switch (PositionID) {
+		case 1:
+			Position position6 = new Position();
+			position6.positionName = positionName.DEV;
+			account.positionID = position6; 
+			break;
+		case 2:
+			Position position7 = new Position();
+			position7.positionName = positionName.TEST;
+			account.positionID = position7; 
+			break;
+		case 3:
+			Position position8 = new Position();
+			position8.positionName = positionName.SCRUM_MASTER;
+			account.positionID = position8; 
+			break;
+		case 4:
+			Position position9 = new Position();
+			position9.positionName = positionName.PM;
+			account.positionID = position9; 
+			break;
+			
+		}
+		System.out.printf("%s %n %n", "-----------------------------------" );
+		System.out.println("AccountID cua ban la: " +account.accountId);
+		System.out.println( "Email cua ban la: "+ account.email);
+		System.out.println( "PositionName: "+ account.positionID.positionName);
+		
+			}
+	
+		/* Question 6:
+		Viết lệnh cho phép người dùng tạo department (viết thành method) */
+	
 //	}
-}
+//	
+	public static void Question6() {
+		Scanner scanner = new Scanner(System.in);
+		Department department = new Department();
+		System.out.print("Nhap vao DepartmentID: ");
+		department.departmentId = scanner.nextInt();
+		
+		System.out.print("Moi ban nhap vao DepartmentName: ");
+		department.departmentName = scanner.next();
+		
+		System.out.printf("%s %n %n", "-----------------------------------" );
+		System.out.println("DepartmentID cua ban la: " + department.departmentId);
+		System.out.println( "DepartmentName cua ban la: "+ department.departmentName);
+	}
+	
+	
+}}

@@ -1,6 +1,6 @@
 
 public class ExamQuestion {
-	Exam exam_ID;
-	Question[] questionIDs;
+		Exam exam_ID;
+		Question[] questionIDs;
 }
 
