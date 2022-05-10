@@ -1,11 +1,12 @@
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Date;
 import java.util.Scanner;
 
 public class InputFromConsole {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		// Department
 		Department department1 = new Department();
 		department1.departmentId = 1;
@@ -316,20 +317,25 @@ public class InputFromConsole {
 		
 //			Question 4:
 //			Viết lệnh cho phép người dùng nhập vào ngày sinh nhật của họ
-			Scanner scanner = new Scanner(System.in);
-			System.out.println("Nhap vao ngay thang nam sinh theo dinh dang yyyy/MM/dd");
-			String dateInput = scanner.next();
-			String pattern = "yyyy/MM/dd";
-			SimpleDateFormat dateFormat = new SimpleDateFormat(pattern);
-			Date date = dateFormat.parse(dateInput);
-			System.out.println("Ngay thang nam sinh: " + date);
-			scanner.close();
+		
+//			Scanner scanner = new Scanner(System.in);
+//			System.out.print("Nhap vao ngay thang nam sinh theo dinh dang yyyy/MM/dd");
+//			String dateInput = scanner.next();
+//			String pattern = "yyyy/MM/dd";
+//			SimpleDateFormat dateFormat = new SimpleDateFormat(pattern);
+//			Date date = dateFormat.parse(dateInput);
+//			String patter1n = "yyyy/MM/dd";
+//			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(patter1n);
+//			String datefomat1 = simpleDateFormat.format(date);
+//			System.out.println("Ngay thang nam sinh: " + datefomat1);
+//			scanner.close();
 			
 			
 //			Question 5:
 //			Viết lệnh cho phép người dùng tạo account (viết thành method)
-//			Đối với property Position, Người dùng nhập vào 1 2 3 4 5 và vào chương trình sẽ chuyển thành Position.Dev, Position.Test, Position.ScrumMaster, Position.PM
-//			5
+//			Đối với property Position, Người dùng nhập vào 1 2 3 4  và vào chương trình sẽ chuyển thành Position.Dev, Position.Test, Position.ScrumMaster, Position.PM
+//			
+		
 //			Question 6:
 //			Viết lệnh cho phép người dùng tạo department (viết thành method)
 //			Question 7:
@@ -371,5 +377,49 @@ public class InputFromConsole {
 //			Sau đó chương trình sẽ chọn ngẫu nhiên 1 group
 //			Bước 4:
 //			Thêm account vào group chương trình vừa chọn ngẫu nhiên
-		}
+//		Question5();
+		
+//		}
+//	public static void Question5() {
+//		Scanner scanner = new Scanner(System.in);
+//		Account account = new Account();
+//		System.out.print("Nhap vao AccountID: ");
+//		account.accountId = scanner.nextInt();
+//		
+//		System.out.print("Moi ban nhap vao Email: ");
+//		account.email = scanner.next();
+//		
+//	
+//		System.out.print("Moi ban nhap vao PositionID: ");
+//		
+//		int PositionID = scanner.nextInt();
+//		
+//		switch (PositionID) {
+//		case 1:
+//			Position position6 = new Position();
+//			position6.positionName = positionName.DEV;
+//			account.positionID = position6; 
+//			break;
+//		case 2:
+//			Position position7 = new Position();
+//			position7.positionName = positionName.TEST;
+//			account.positionID = position7; 
+//			break;
+//		case 3:
+//			Position position8 = new Position();
+//			position8.positionName = positionName.SCRUM_MASTER;
+//			account.positionID = position8; 
+//			break;
+//		case 4:
+//			Position position9 = new Position();
+//			position9.positionName = positionName.PM;
+//			account.positionID = position9; 
+//			break;
+//			
+//		}
+//		System.out.printf("%s %n %n", "-----------------------------------" );
+//		System.out.println("AccountID cua ban la: " +account.accountId);
+//		System.out.println( "Email cua ban la: "+ account.email);
+//		System.out.println( "PositionName: "+ account.positionID.positionName);
+//	}
 }

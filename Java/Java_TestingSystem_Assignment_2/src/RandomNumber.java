@@ -302,6 +302,7 @@ public class RandomNumber {
 //		Random random = new Random();
 //		int c = random.nextInt(tensvs.length);
 //		System.out.println("ten sv ngau nhien: " + tensvs[c])
+		
 		/* Question 4:
 			Lấy ngẫu nhiên 1 ngày trong khoảng thời gian 24-07-1995 tới 
 			ngày 20-12-1995 */

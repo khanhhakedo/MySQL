@@ -296,16 +296,16 @@ public class Method {
 //		Account[] accounts = {account1,account2,account3};
 //		IDAccount(accounts);
 		
-		}
+//		}
 	
-//	public static void IDAccount(Account[] accounts) {
+//	private static void IDAccount(Account[] accounts) {
 //		 for (int i = 0; i < accounts.length; i++) {
 //			Account account = accounts[i];
 //			System.out.println(account.accountId);
 //			
 //		}
 //	}
-		
+//		
 		/* Question 3:
 			Tạo method để in ra các số nguyên dương nhỏ hơn 10*/
 		
@@ -315,9 +315,7 @@ public class Method {
 //	public static void soNguyen(int N) {
 //		for (int i = 0; i < N; i++) {
 //			System.out.println(i);
-//		}	
-
-
+		}	
 
 }
 

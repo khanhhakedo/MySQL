@@ -533,8 +533,47 @@ public static void main(String[] args) {
 //		}
 		
 		// WHILE
-		 Question 16:
-		Làm lại các Question ở phần FOR bằng cách sử dụng WHILE kết hợp với lệnh break, continue */
+//		 Question 16:
+//		Làm lại các Question ở phần FOR bằng cách sử dụng WHILE kết hợp với lệnh break, continue */
+//		
+
+				/* Question 10:
+				In ra thông tin các account bao gồm: Email, FullName và tên phòng ban của họ theo định dạng như sau:
+				Thông tin account thứ 1 là:
+				Email: NguyenVanA@gmail.com
+				Full name: Nguyễn Văn A
+				Phòng ban: Sale
+				Thông tin account thứ 2 là:
+				Email: NguyenVanB@gmail.com
+				Full name: Nguyễn Văn B
+				Phòng ban: Marketting */
+		
+		// Lam lai theo vong lap While
+//		 Account[] accounts = {account1,account2,account3};
+//		 int i = 0;
+//		 while (i<accounts.length) {
+//				System.out.printf("%s %19s %17s %n", accounts[i].email, accounts[i].fullName, accounts[i].departmentID.departmentName);
+//				i++;
+//		}
+			
+		
+
+			/* Question 11:
+			In ra thông tin các phòng ban bao gồm: id và name theo định dạng sau:
+			Thông tin department thứ 1 là:
+			Id: 1
+			Name: Sale
+			Thông tin department thứ 2 là:
+			Id: 2
+			Name: Marketing */
+		
+//		Department[] departments = {department1,department2,department3};
+//		int i = 0;
+//		while (i<departments.length) {
+//			System.out.println(departments[i].departmentId + "    " + departments[i].departmentName);
+//			i++;
+//		}
+		
 		
 		// DO-WHILE
 		/* Question 17:
