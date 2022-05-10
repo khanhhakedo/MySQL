@@ -319,6 +319,9 @@ public class Program {
 	System.out.println("FullName: " + account1.fullName);
 	System.out.println("DepartmentId: " + account1.departmentID.departmentId);
 	System.out.println("Position: " + account1.positionID.positionId);
+	for (Group accountgroup1  : group1s) {
+		System.out.println("Group: " + accountgroup1.groupId);
+	}
 	// System.out.println("Group: " + account1.groups);
 	System.out.println("CreateDate: " + account1.createDate);
 	System.out.println("\n");
@@ -330,7 +333,9 @@ public class Program {
 	System.out.println("FullName: " + account2.fullName);
 	System.out.println("DepartmentId: " + account2.departmentID.departmentId);
 	System.out.println("Position: " + account2.positionID.positionId);
-	// System.out.println("Group: " + account2.groups);
+	for (Group accountgroup2  : group2s) {
+		System.out.println("Group: " + accountgroup2.groupId);
+	}
 	System.out.println("CreateDate: " + account2.createDate);
 	System.out.println("\n");
 	
@@ -341,7 +346,9 @@ public class Program {
 	System.out.println("FullName: " + account3.fullName);
 	System.out.println("DepartmentId: " + account3.departmentID.departmentId);
 	System.out.println("Position: " + account3.positionID.positionId);
-	// System.out.println("Group: " + account3.groups);
+	for (Group accountgroup3  : group3s) {
+		System.out.println("Group: " + accountgroup3.groupId);
+	}
 	System.out.println("CreateDate: " + account3.createDate);
 	System.out.println("\n");
 	
@@ -370,19 +377,25 @@ public class Program {
 	// GroupAccount
 	System.out.println("Thong tin GroupAccount1:");
 	System.out.println("GroupID: " + groupAccount1.group_ID.groupId);
-	// System.out.println("AccountID: " + groupAccount1.Account.accountId);
+	for (Account accounts1 : groupAccount1s) {
+		System.out.println("AccountID: " + accounts1.accountId );
+	}
 	System.out.println("JoinDate: " + groupAccount1.joinDates);
 	System.out.println("\n");
 	
 	System.out.println("Thong tin GroupAccount2:");
 	System.out.println("GroupID: " + groupAccount2.group_ID.groupId);
-	//System.out.println("AccountID: " + groupAccount2.Account.accountId);
+	for (Account accounts2 : groupAccount2s) {
+		System.out.println("AccountID: " + accounts2.accountId );
+	}
 	System.out.println("JoinDate: " + groupAccount2.joinDates);
 	System.out.println("\n");
 	
 	System.out.println("Thong tin GroupAccount3:");
 	System.out.println("GroupID: " + groupAccount3.group_ID.groupId);
-	//System.out.println("AccountID: " + groupAccount3.Account.accountId);
+	for (Account accounts3 : groupAccount3s) {
+		System.out.println("AccountID: " + accounts3.accountId );
+	}
 	System.out.println("JoinDate: " + groupAccount3.joinDates);
 	System.out.println("\n");
 	
@@ -499,17 +512,24 @@ public class Program {
 	
 	System.out.println("Thong tin ExamQuestion1:");
 	System.out.println("ExamID: " + examQuestion1.exam_ID.examId );
-	//System.out.println("QuestionID: " + examQuestion1.questionIDs);
+	for (Question questions1 : questionId1s) {
+		System.out.println("QuestionID: " + questions1.questionId);
+	}
 	System.out.println("\n");
 	
 	System.out.println("Thong tin ExamQuestion2:");
 	System.out.println("ExamID: " + examQuestion2.exam_ID.examId );
-	//System.out.println("QuestionID: " + examQuestion2.questionIDs);
+	for (Question questions2 : questionId2s) {
+		System.out.println("QuestionID: " + questions2.questionId);
+	}
 	System.out.println("\n");
 	
 	System.out.println("Thong tin ExamQuestion3:");
 	System.out.println("ExamID: " + examQuestion3.exam_ID.examId );
-	//System.out.println("QuestionID: " + examQuestion3.questionIDs);
+	for (Question questions3 : questionId3s) {
+		System.out.println("QuestionID: " + questions3.questionId);
+	}
 	System.out.println("\n");
 	}
 }
+	

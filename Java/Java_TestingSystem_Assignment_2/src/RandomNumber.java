@@ -336,5 +336,5 @@ public class RandomNumber {
 //		int a = random.nextInt(900) +100 ;
 //		System.out.println("so nguyen ngau nhien: " + a);
 		
-		}
+	}
 }
