@@ -315,6 +315,7 @@ public class Method {
 //	public static void soNguyen(int N) {
 //		for (int i = 0; i < N; i++) {
 //			System.out.println(i);
+
 	}	
 
 }

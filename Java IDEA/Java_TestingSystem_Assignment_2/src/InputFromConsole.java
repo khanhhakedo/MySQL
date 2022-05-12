@@ -378,7 +378,7 @@ public class InputFromConsole {
 //			Sau đó chương trình sẽ chọn ngẫu nhiên 1 group
 //			Bước 4:
 //			Thêm account vào group chương trình vừa chọn ngẫu nhiên
-		Question5();
+//		Question5();
 //		Question6();
 		
 		}

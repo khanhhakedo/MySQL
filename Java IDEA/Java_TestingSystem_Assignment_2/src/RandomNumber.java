@@ -332,9 +332,9 @@ public class RandomNumber {
 		
 		/* Question 7:
 			Lấy ngẫu nhiên 1 số có 3 chữ số */
-		Random random = new Random();
-		int a = random.nextInt(900) +100 ;
-		System.out.println("so nguyen ngau nhien: " + a);
+//		Random random = new Random();
+//		int a = random.nextInt(900) +100 ;
+//		System.out.println("so nguyen ngau nhien: " + a);
 		
 	}
 }

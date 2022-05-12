@@ -1,4 +1,3 @@
-
 import java.time.LocalTime;
 import java.util.Date;
 
@@ -110,37 +109,37 @@ public static void main(String[] args) {
 		group3.createDate = new Date("2022/05/08");
 		
 		//Account -group
-		Group [] group1s = {group1,group3};
+		Group[] group1s = {group1,group3};
 		account1.groups = group1s;
 		
-		Group [] group2s = {group1,group2,group3};
+		Group[] group2s = {group1,group2,group3};
 		account2.groups = group2s;
 		
-		Group [] group3s = {group1};
+		Group[] group3s = {group1};
 		account3.groups = group3s;
 		
-		Group [] group4s = {group3};
+		Group[] group4s = {group3};
 		account4.groups = group4s;
 		
-		Group [] group5s = {group2,group3};
+		Group[] group5s = {group2,group3};
 		account5.groups = group5s;
 		
 		//groupAccount
 		GroupAccount groupAccount1 = new GroupAccount();
 		groupAccount1.group_ID = group1;
-		Account [] groupAccount1s = {account1,account3,account4};
+		Account[] groupAccount1s = {account1,account3,account4};
 		groupAccount1.accountIDs = groupAccount1s;
 		groupAccount1.joinDates = new Date("2022/05/08");
 		
 		GroupAccount groupAccount2 = new GroupAccount();
 		groupAccount2.group_ID = group2;
-		Account [] groupAccount2s = {account2,account3,account4};
+		Account[] groupAccount2s = {account2,account3,account4};
 		groupAccount2.accountIDs = groupAccount2s;
 		groupAccount2.joinDates = new Date("2022/05/09");
 		
 		GroupAccount groupAccount3 = new GroupAccount();
 		groupAccount3.group_ID = group3;
-		Account [] groupAccount3s = {};
+		Account[] groupAccount3s = {};
 		groupAccount3.accountIDs = groupAccount3s;
 		groupAccount3.joinDates = new Date("2022/05/05");
 		
@@ -266,40 +265,40 @@ public static void main(String[] args) {
 		// ExamQuestion
 		ExamQuestion examQuestion1 = new ExamQuestion();
 		examQuestion1.exam_ID = exam1;
-		Question [] questionId1s = {question1,question3,question4};
+		Question[] questionId1s = {question1,question3,question4};
 		examQuestion1.questionIDs = questionId1s;
 		
 		ExamQuestion examQuestion2 = new ExamQuestion();
 		examQuestion2.exam_ID = exam2;
-		Question [] questionId2s = {question2,question3,question4};
+		Question[] questionId2s = {question2,question3,question4};
 		examQuestion1.questionIDs = questionId2s;
 		
 		ExamQuestion examQuestion3 = new ExamQuestion();
 		examQuestion3.exam_ID = exam3;
-		Question [] questionId3s = {question1,question2};
+		Question[] questionId3s = {question1,question2};
 		examQuestion3.questionIDs = questionId3s;
 	
-//	// Question 1:
-//		/* Kiểm tra account thứ 2
-//		Nếu không có phòng ban (tức là department == null) thì sẽ in ra text "Nhân viên này chưa có phòng ban"
-//		Nếu không thì sẽ in ra text "Phòng ban của nhân viên này là …" */
-//		
+	// Question 1:
+		/* Kiểm tra account thứ 2
+		Nếu không có phòng ban (tức là department == null) thì sẽ in ra text "Nhân viên này chưa có phòng ban"
+		Nếu không thì sẽ in ra text "Phòng ban của nhân viên này là …" */
+
 //	if (account2.departmentID == null) {
 //		System.out.println("Nhân viên này chưa có phòng ban");
 //	} else {
 //		System.out.println("Phòng ban của nhân viên này là : " + account2.departmentID.departmentId);
 //	}
-//	
-//	// Question 2:
-//		/* Kiểm tra account thứ 2
-//			Nếu không có group thì sẽ in ra text "Nhân viên này chưa có group"
-//			Nếu có mặt trong 1 hoặc 2 group thì sẽ in ra text "Group của nhân viên này là Java Fresher, C# Fresher"
-//			Nếu có mặt trong 3 Group thì sẽ in ra text "Nhân viên này là người quan trọng, tham gia nhiều group"
-//			Nếu có mặt trong 4 group trở lên thì sẽ in ra text "Nhân viên này là người hóng chuyện, tham gia tất cả các group" */
-//	
+
+	// Question 2:
+		/* Kiểm tra account thứ 2
+			Nếu không có group thì sẽ in ra text "Nhân viên này chưa có group"
+			Nếu có mặt trong 1 hoặc 2 group thì sẽ in ra text "Group của nhân viên này là Java Fresher, C# Fresher"
+			Nếu có mặt trong 3 Group thì sẽ in ra text "Nhân viên này là người quan trọng, tham gia nhiều group"
+			Nếu có mặt trong 4 group trở lên thì sẽ in ra text "Nhân viên này là người hóng chuyện, tham gia tất cả các group" */
+
 //	if (account2.groups == null) {
-//		System.out.println("Nhân viên này chưa có group");	
-//	} 
+//		System.out.println("Nhân viên này chưa có group");
+//	}
 //	else if ( account2.groups.length == 1 || account2.groups.length == 2 ){
 //		System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
 //	}
@@ -309,10 +308,10 @@ public static void main(String[] args) {
 //	else if (account2.groups.length == 4) {
 //		System.out.println("Nhân viên này là người hóng chuyện, tham gia tất cả các group");
 //	}
-//
-//	
-//	// Question 3
-//		/* Sử dụng toán tử ternary để làm Question 1 */
+
+
+	// Question 3
+		/* Sử dụng toán tử ternary để làm Question 1 */
 //	System.out.println(account2.departmentID == null ? "Nhân viên này chưa có phòng ban" : "Phòng ban của nhân viên này là : " + account2.departmentID.departmentId);
 
 	// Question 4
@@ -334,7 +333,7 @@ public static void main(String[] args) {
 //			System.out.println("Nhóm khong co thành viên");
 //		} else {int CountAccountGroup = groupAccount3.accountIDs.length;
 //		switch (CountAccountGroup) {
-//			
+//
 //		case 1:
 //			System.out.println("Nhóm có một thành viên");
 //			break;
@@ -344,7 +343,7 @@ public static void main(String[] args) {
 //		case 3:
 //			System.out.println("Nhóm có ba thành viên");
 //			break;
-//			
+//
 //
 //		default:
 //			System.out.println("Nhóm có nhieu thành viên");
@@ -385,7 +384,7 @@ public static void main(String[] args) {
 		
 		/* Question 7:
 		Sử dụng switch case để làm lại Question 4 */
-//		String phongban = account1.positionID.positionName.toString(); 
+//		String phongban = account1.positionID.positionName.toString();
 //		switch (phongban) {
 //		case "DEV":
 //	System.out.println("Đây là Developer");
@@ -584,7 +583,7 @@ public static void main(String[] args) {
 //				if (i < departments.length) {
 //					if (i == 2) {
 //						break;
-//					}
+//
 //					System.out.println("DepartmentID: " + departments[i].departmentId);
 //				}
 //				i++;
@@ -605,10 +604,10 @@ public static void main(String[] args) {
 				Id: 2
 				Name: Marketing */
 			
-//			Department[] departments = {department1,department2,department3};
+//			Department[] departments = {department1,department2,department3,department4,department5};
 //			int i = 0;
-//			
-//			do {if ( i == 1) {
+//
+//			do {if ( i == 2) {
 //				break;
 //			}
 //				System.out.println(departments[i].departmentId);

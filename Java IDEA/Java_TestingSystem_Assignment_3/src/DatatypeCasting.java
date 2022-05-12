@@ -38,5 +38,6 @@ public static void main(String[] args) {
 			int b = 7;
 			float c = (float) a/b;
 			System.out.println(c);
+
 		}
 }

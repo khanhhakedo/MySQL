@@ -111,37 +111,37 @@ public class DateFomat {
 			group3.createDate = new Date("2022/05/08");
 			
 			//Account -group
-			Group [] group1s = {group1,group3};
+			Group[] group1s = {group1,group3};
 			account1.groups = group1s;
 			
-			Group [] group2s = {group1,group2,group3};
+			Group[] group2s = {group1,group2,group3};
 			account2.groups = group2s;
 			
-			Group [] group3s = {group1};
+			Group[] group3s = {group1};
 			account3.groups = group3s;
 			
-			Group [] group4s = {group3};
+			Group[] group4s = {group3};
 			account4.groups = group4s;
 			
-			Group [] group5s = {group2,group3};
+			Group[] group5s = {group2,group3};
 			account5.groups = group5s;
 			
 			//groupAccount
 			GroupAccount groupAccount1 = new GroupAccount();
 			groupAccount1.group_ID = group1;
-			Account [] groupAccount1s = {account1,account3,account4};
+			Account[] groupAccount1s = {account1,account3,account4};
 			groupAccount1.accountIDs = groupAccount1s;
 			groupAccount1.joinDates = new Date("2022/05/08");
 			
 			GroupAccount groupAccount2 = new GroupAccount();
 			groupAccount2.group_ID = group2;
-			Account [] groupAccount2s = {account2,account3,account4};
+			Account[] groupAccount2s = {account2,account3,account4};
 			groupAccount2.accountIDs = groupAccount2s;
 			groupAccount2.joinDates = new Date("2022/05/09");
 			
 			GroupAccount groupAccount3 = new GroupAccount();
 			groupAccount3.group_ID = group3;
-			Account [] groupAccount3s = {account1,account4,account5};
+			Account[] groupAccount3s = {account1,account4,account5};
 			groupAccount3.accountIDs = groupAccount3s;
 			groupAccount3.joinDates = new Date("2022/05/05");
 			
@@ -267,21 +267,21 @@ public class DateFomat {
 			// ExamQuestion
 			ExamQuestion examQuestion1 = new ExamQuestion();
 			examQuestion1.exam_ID = exam1;
-			Question [] questionId1s = {question1,question3,question4};
+			Question[] questionId1s = {question1,question3,question4};
 			examQuestion1.questionIDs = questionId1s;
 			
 			ExamQuestion examQuestion2 = new ExamQuestion();
 			examQuestion2.exam_ID = exam2;
-			Question [] questionId2s = {question2,question3,question4};
+			Question[] questionId2s = {question2,question3,question4};
 			examQuestion1.questionIDs = questionId2s;
 			
 			ExamQuestion examQuestion3 = new ExamQuestion();
 			examQuestion3.exam_ID = exam3;
-			Question [] questionId3s = {question1,question2};
+			Question[] questionId3s = {question1,question2};
 			examQuestion3.questionIDs = questionId3s;
 			
 			/* Question 1:
-				In ra thông tin Exam thứ 1 và property create date sẽ được format 
+				In ra thông tin Exam thứ 1 và property create date sẽ được format
 				theo định dạng vietnamese */
 			
 //			System.out.println("IDExam1: " + exam1.examId);
@@ -325,10 +325,10 @@ public class DateFomat {
 			
 			/* Question 5:
 				Chỉ in ra "MM-DD" của create date trong Question 2 */
-			String pattern = "MM-dd";
-			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-			String dateQuestion2 = simpleDateFormat.format(question2.createDate);
-			System.out.println(dateQuestion2);
+//			String pattern = "MM-dd";
+//			SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+//			String dateQuestion2 = simpleDateFormat.format(question2.createDate);
+//			System.out.println(dateQuestion2);
 			
 	}
 }
