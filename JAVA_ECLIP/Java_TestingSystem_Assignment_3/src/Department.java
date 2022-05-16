@@ -29,17 +29,19 @@ public class Department implements Comparator<Department> {
 		return result ;
 	}
 	
-	public boolean equals(Object obj) {
-		if (obj == null) {
+	@Override
+	public boolean equals(Object a) {
+		if (a == null) {
 		return false;	
 		}
-		Department other = (Department) obj;
-		if (departmentName.equals(other.departmentName)) {
+		Department department = (Department) a;
+		if (departmentId == department.departmentId && departmentName.equals(department.departmentName)){
 			return true;
 		}
 		return false;
 	}
-		
+	
+	
 }
 
 

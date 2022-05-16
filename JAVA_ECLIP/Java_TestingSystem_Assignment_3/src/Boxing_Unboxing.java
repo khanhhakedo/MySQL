@@ -9,10 +9,9 @@ public class Boxing_Unboxing {
 		//		sau dấu thập phân)
 		
 //		Integer salary = 5000;
-//		
 //		float salaryconvert = salary.floatValue();
-//	
-//		System.out.printf("%.2f", salaryconvert);
+//			
+//		System.out.printf("%2.2f", salaryconvert);
 	
 	//		Question 2:
 	//		Khai báo 1 String có value = "1234567"

@@ -30,12 +30,11 @@ public class ObjectMethod {
 //		System.out.println(department1.toString());
 			
 	//		Question 2:
-	//		In ra thông tin của tất cả phòng ban (sử dụng toString())
+//			In ra thông tin của tất cả phòng ban (sử dụng toString())
 //		Department[] departments = {department1,department2,department3,department4,department5};
-//		for (Department department : departments) {
-//			System.out.println(department.toString());
+//		for (int i = 0; i < departments.length; i++) {
+//			System.out.println(departments[i].toString());
 //		}
-//		
 			
 	//		Question 3:
 	//		In ra địa chỉ của phòng ban thứ 1

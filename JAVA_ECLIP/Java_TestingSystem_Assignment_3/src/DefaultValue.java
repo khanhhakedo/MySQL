@@ -1,4 +1,6 @@
+import java.text.DateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class DefaultValue {
 
@@ -11,6 +13,9 @@ public class DefaultValue {
 	//			 FullName: "Full name 1"
 	//			 CreateDate: now
 
+		Locale locale = new Locale("vi","VN");
+		DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.DEFAULT,locale);
+		String date = null;
 		Account[] account= new Account[5];
 
 			for ( int i = 0; i < account.length; i++){
@@ -19,13 +24,13 @@ public class DefaultValue {
 				account[i].userName = "User name " + i;
 				account[i].fullName = "full name " + i;
 				account[i].createDate = new Date();
+				date = dateFormat.format(account[i].createDate);
+
+			System.out.println(account[i].toString());
+			System.out.println("-------------------------------");
+
 		}
-		for ( int i =0;i<account.length; i++) {
-			System.out.println("AccountID: " + account[i].accountId);
-			System.out.println("UserName: " + account[i].accountId);
-			System.out.println("FullName: " + account[i].accountId);
-			System.out.println("Date" + account[i].createDate);
-		}
+		
 
 	}
 

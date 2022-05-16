@@ -1,18 +1,42 @@
+import java.util.Iterator;
+import java.util.Scanner;
 
-public class String_ {
+public class StringBai3 {
 
-	public static void main(String_[] args) {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
 //		Question 1:
 //			Nhập một xâu kí tự, đếm số lượng các từ trong xâu kí 
 //		tự đó (các từ có thể cách nhau bằng nhiều khoảng trắng );
 		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("nhap chuoi ky tu");
+//		String Question1 = scanner.nextLine();
+//		System.out.println("So ky tu: " + Question1.length());
+//		
 //		Question 2:
 //		Nhập hai xâu kí tự s1, s2 nối xâu kí tự s2 vào sau xâu s1;
+		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.print("Nhap chuoi ky tu thu 1: ");
+//		String Question2_1 = scanner.next();
+//		System.out.print("Nhap chuoi ky tu 2: ");
+//		String Question2_2 = scanner.next();
+//		
+//		System.out.println("chuoi ky tu la: " + Question2_1 +Question2_2);
+		
 		
 //		Question 3:
 //		Viết chương trình để người dùng nhập vào tên và kiểm tra, 
 //		nếu tên chư viết hoa chữ cái đầu thì viết hoa lên
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("nhap vao ten");
+//		String name = scanner.nextLine();
+//		String nameHoa = name.substring(0,1).toUpperCase();
+//		String ten = nameHoa + name.substring(1);
+//		System.out.println(ten);
+//		scanner.close();
 		
 //		Question 4:
 //		Viết chương trình để người dùng nhập vào tên in từng ký tự trong tên của người dùng ra
@@ -21,6 +45,16 @@ public class String_ {
 //		"Ký tự thứ 1 là: N"
 //		"Ký tự thứ 1 là: A"
 //		"Ký tự thứ 1 là: M"
+		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("nhap vao ten");
+//		String name = scanner.nextLine();
+//		String viethoa = name.toUpperCase();
+//		for (int i = 0; i < name.length(); i++) {
+//		System.out.println( "Ky tu thu " +i +": " + viethoa.charAt(i));
+//			
+//		}
+	
 		
 //		Question 5:
 //		Viết chương trình để người dùng nhập vào họ, sau đó yêu cầu người dùng nhập vào 
@@ -36,6 +70,32 @@ public class String_ {
 //		"Tên đệm là: Văn"
 //		"Tên là: Nam"
 		
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("Nhap vao ten day du");
+//		String fullName = scanner.nextLine();
+//		// chuan hoa du lieu
+//		
+//		fullName = fullName.trim();
+//		String[] dacattim = fullName.split(" ");
+//		String ho = "";
+//		String tendem1 = "" ;
+//		String tendem2 = "" ;
+//		String ten = "";
+//		
+//		ho = dacattim[0];
+//		ten = dacattim[dacattim.length - 1];
+//		
+//		for (int i = 1; i < dacattim.length - 2 ; i++) {
+//			tendem1 = dacattim[i] +"";
+//			
+//		}
+//		for (int i = 1; i < dacattim.length - 1 ; i++) {
+//			tendem2 = dacattim[i] +"";
+//		}
+//		System.out.println(ho);
+//		System.out.println(tendem1);
+//		System.out.println(tendem2);
+//		System.out.println(ten);
 //		Question 7:
 //		Viết chương trình yêu cầu người dùng nhập vào họ và tên đầy đủ và chuẩn hóa họ và tên
 //		của họ như sau:
