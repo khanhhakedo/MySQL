@@ -10,4 +10,8 @@ public class Account {
 	Group[] groups;
 	Date createDate;
 
+	public Account() {
+	}
+
+
 }

@@ -7,6 +7,7 @@ public class Program {
 	public static void main(String[] args) {
 		// Department
 		Department department1 = new Department();
+//					instance
 		department1.departmentId = 1;
 		department1.departmentName = "Marketing";
 
