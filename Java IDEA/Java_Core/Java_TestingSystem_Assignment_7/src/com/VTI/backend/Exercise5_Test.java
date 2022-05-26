@@ -37,8 +37,10 @@ public class Exercise5_Test implements  Serializable {
 
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 
-        objectOutputStream.writeObject(studentExercise1);
+        objectOutputStream.writeObject(new1);
         objectOutputStream.close();
+
+//        doc file
 
         FileInputStream fileInputStream = new FileInputStream("C:\\Users\\ADMIN\\Documents\\testJava.ser");
 

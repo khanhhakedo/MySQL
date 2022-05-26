@@ -213,8 +213,8 @@ public class Static_Test {
                                 System.out.println("---------------------------------------");
                                 System.out.println("-----Nhập chức năng tiếp theo-----");
 
-                                System.out.println("Nhap thong tin PrimaryStudent: 1");
-                                System.out.println("Nhap thong tin SecondaryStudent: 2");
+                                System.out.println("Nhap thong tin PrimaryStudent: 4");
+                                System.out.println("Nhap thong tin SecondaryStudent: 5");
                                 System.out.println("Thoat: 6");
 
                                 break;
@@ -238,12 +238,13 @@ public class Static_Test {
                                 System.out.println("---------------------------------------");
                                 System.out.println("-----Nhập chức năng tiếp theo-----");
 
-                                System.out.println("Nhap thong tin PrimaryStudent: 1");
-                                System.out.println("Nhap thong tin SecondaryStudent: 2");
+                                System.out.println("Nhap thong tin PrimaryStudent: 4");
+                                System.out.println("Nhap thong tin SecondaryStudent: 5");
                                 System.out.println("Thoat: 6");
                                 break;
 
-
+                            case 6:
+                                break;
 
                             default:
                                 System.out.println("Ban nhap sai roi! moi nhap lai");
@@ -254,7 +255,7 @@ public class Static_Test {
                                 System.out.println("Nhap thong tin SecondaryStudent: 5");
                                 System.out.println("Thoat: 6");
                         }
-                    }while (i < 6);
+                    }while (i != 6);
 
 
                 case 0:
@@ -286,7 +287,7 @@ public class Static_Test {
                             case 9:
 
                                 System.out.println("------------Exit------------");
-
+                            break;
                         }
 
                     }while (y != 9);
