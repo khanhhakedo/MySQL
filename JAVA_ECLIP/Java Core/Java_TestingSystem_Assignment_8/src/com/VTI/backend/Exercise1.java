@@ -71,17 +71,7 @@ public class Exercise1 {
 //        }
 //        System.out.println("------------------");
 //
-        System.out.println("cau i");
-
-        for (int i = 0; i < students.size(); i++) {
-            for (int j = i+1; j < students.size() ; j++) {
-                if (students.get(i).getName().equals(students.get(j).getName())){
-                    System.out.println("cac student trung ten");
-                    System.out.println(students.get(i));
-                    System.out.println(students.get(j));
-                }
-            }
-        }
+////        System.out.println("cau i");
 //
 //        System.out.println("cau j");
 //        for (Student student : students) {

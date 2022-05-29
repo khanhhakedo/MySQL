@@ -68,13 +68,13 @@ public class ObjectMethod {
 
 		
 
-//		Department[] departments = {department1,department2,department3,department4,department5};
-//
-//		Collections.sort(Arrays.asList(departments), new Department());
-//		
-//		for (Department department : departments) {
-//			System.out.println(department);
-//		}
+		Department[] departments = {department1,department2,department3,department4,department5};
+
+		Collections.sort(Arrays.asList(departments), new Department());
+
+		for (Department department : departments) {
+			System.out.println(department);
+		}
 			
 	//		Question 7: Khởi tạo 1 array học sinh gồm 5 Phòng ban, sau đó in ra danh 
 	//		sách phòng ban được sắp xếp theo tên

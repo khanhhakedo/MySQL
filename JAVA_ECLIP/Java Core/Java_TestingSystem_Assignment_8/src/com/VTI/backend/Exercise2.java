@@ -27,7 +27,7 @@ public class Exercise2 {
 
 
 
-//		Collections.sort(Arrays.asList(students), new StudentExercise2());
+		Collections.sort(Arrays.asList(students), new StudentExercise2());
 
 		for (StudentExercise2 studentExercise : students) {
 			System.out.println(students);
