@@ -6,10 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Java_BaiThi_NguyenKhanh" />
+        <module name="Java_TestingSystem_Assignment-11" />
+        <module name="Java_FinalExam_NguyenKhanh" />
+        <module name="Java_TestingSystem_Assignment_10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Java_BaiThi_NguyenKhanh" target="11" />
+      <module name="java_Exam" target="11" />
+      <module name="Java_Final_Exam_NguyenKhanh" target="1.5" />
+      <module name="Java_FinalExam_NguyenKhanh" target="11" />
+      <module name="Java_NguyenKhanh" target="11" />
+      <module name="Java_TestingSystem_Assignment-11" target="11" />
+      <module name="Java_TestingSystem_Assignment_10" target="11" />
+      <module name="Java_TestingSystem_Assignment_12" target="11" />
+      <module name="Lesson10-maven" target="1.7" />
       <module name="test" target="11" />
+      <module name="untitled" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

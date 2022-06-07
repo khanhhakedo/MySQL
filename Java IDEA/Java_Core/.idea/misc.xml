@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Java_TestingSystem_Assignment_10/pom.xml" />
+        <option value="$PROJECT_DIR$/Java_TestingSystem_Assignment_11/pom.xml" />
+        <option value="$PROJECT_DIR$/Java_TestingSystem_Assignment-11/pom.xml" />
+        <option value="$PROJECT_DIR$/Java_BaiThi_NguyenKhanh/pom.xml" />
+        <option value="$PROJECT_DIR$/Java_FinalExam_NguyenKhanh/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

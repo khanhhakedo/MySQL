@@ -10,8 +10,7 @@ DROP TABLE IF EXISTS Position;
 CREATE TABLE `Position` (
 PositionID TINYINT UNSIGNED AUTO_INCREMENT PRIMARY
 KEY,
-PositionName ENUM('Dev','Test','Scrum Master','PM') NOT NULL UNIQUE
-KEY
+PositionName ENUM('Dev','Test','Scrum Master','PM') NOT NULL 
 );
 DROP TABLE IF EXISTS `Account`;
 CREATE TABLE `Account`(
@@ -24,7 +23,7 @@ DepartmentID TINYINT UNSIGNED ,
 PositionID TINYINT UNSIGNED NOT NULL,
 CreateDate DATETIME DEFAULT NOW(),
 FOREIGN KEY(DepartmentID) REFERENCES Department(DepartmentID),
-FOREIGN KEY(PositionID) REFERENCES `Position`(PositionID)
+FOREIGN KEY(PositionID) REFERENCES `Position`(PositionID) ON DELETE CASCADE
 );
 DROP TABLE IF EXISTS `Group`;
 CREATE TABLE `Group`(

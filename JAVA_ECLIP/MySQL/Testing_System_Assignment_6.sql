@@ -4,12 +4,23 @@ USE Testingsystem;
 account thuộc phòng ban đó */
 DROP PROCEDURE IF EXISTS Question_1;
 DELIMITER $$
-CREATE PROCEDURE Question_1 (IN Input_DepartmentName NVARCHAR(50))
+CREATE PROCEDURE Test ( IN Input_id INT)
 BEGIN
-SELECT A.*
-FROM `Account` A
-JOIN Department D ON A.DepartmentID = D.DepartmentID
-WHERE D.DepartmentName = Input_DepartmentName;
+
+UPDATE Dict_Types
+SET IS_ACTIVE = 0
+WHERE ID = Input_id ;
+
+UPDATE Dict_Items
+SET IS_ACTIVE = 0
+WHERE DICT_TYPE_ID = Input_id ;
+
+UPDATE reward_and_discipline
+SET reward_type = 0 AND discipline_type = 0
+WHERE reward_type = (SELECT ID
+					FROM DICT_ITEMS 
+					WHERE DICT_TYPE_ID = Input_id);
+
 END$$
 DELIMITER ;
 

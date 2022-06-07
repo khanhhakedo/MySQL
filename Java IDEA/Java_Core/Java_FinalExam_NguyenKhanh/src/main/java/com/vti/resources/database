@@ -1,0 +1,5 @@
+
+url         = jdbc:mysql://localhost:3306/Testing_Exam?autoReconnect=true&useSSL=false&characterEncoding=latin1
+username    = root
+password    = root
+driver      = com.mysql.cj.jdbc.Driver
