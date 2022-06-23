@@ -9,7 +9,7 @@ public class Method {
 		Department department1 = new Department();
 		department1.departmentId = 1;
 		department1.departmentName = "Marketing";
-		
+
 		Department department2 = new Department();
 		department2.departmentId = 2;
 		department2.departmentName = "Sale";
@@ -25,24 +25,24 @@ public class Method {
 		Department department5 = new Department();
 		department5.departmentId = 5;
 		department5.departmentName = "No person";
-		
+
 		// Position
 		Position position1 = new Position();
 		position1.positionId = 1;
 		position1.positionName = positionName.DEV;
-		
+
 		Position position2 = new Position();
 		position2.positionId = 2;
 		position2.positionName = positionName.TEST;
-		
+
 		Position position3 = new Position();
 		position3.positionId = 3;
 		position3.positionName = positionName.SCRUM_MASTER;
-		
+
 		Position position4 = new Position();
 		position4.positionId = 4;
 		position4.positionName = positionName.PM;
-		
+
 		// Account
 		Account account1 = new Account();
 		account1.accountId = 1;
@@ -51,7 +51,7 @@ public class Method {
 		account1.fullName = "nguyen khanh 1";
 		account1.departmentID = department1;
 		account1.positionID = position1;
-		
+
 		account1.createDate = new Date("2022/12/03");
 
 		Account account2 = new Account();
@@ -71,7 +71,7 @@ public class Method {
 		account3.departmentID = department3;
 		account3.positionID = position3;
 		account3.createDate = new Date("2022/12/05");
-		
+
 		Account account4 = new Account();
 		account4.accountId = 4;
 		account4.email = "khanh4@gmail.com";
@@ -80,7 +80,7 @@ public class Method {
 		account4.departmentID = department4;
 		account4.positionID = position4;
 		account4.createDate = new Date("2022/12/03");
-		
+
 		Account account5 = new Account();
 		account5.accountId = 5;
 		account5.email = "khanh5@gmail.com";
@@ -89,14 +89,14 @@ public class Method {
 		account5.departmentID = department5;
 		account5.positionID = position1;
 		account5.createDate = new Date("2022/12/04");
-		
+
 		// Group
 		Group group1 = new Group();
 		group1.groupId = 1;
 		group1.groupName = "java";
-		group1.creatorID =account1;
+		group1.creatorID = account1;
 		group1.createDate = new Date("2022/05/06");
-		
+
 		Group group2 = new Group();
 		group2.groupId = 2;
 		group2.groupName = "c#";
@@ -108,74 +108,74 @@ public class Method {
 		group3.groupName = "c#";
 		group3.creatorID = account3;
 		group3.createDate = new Date("2022/05/08");
-		
+
 		//Account -group
-		Group [] group1s = {group1,group3};
+		Group[] group1s = {group1, group3};
 		account1.groups = group1s;
-		
-		Group [] group2s = {group1,group2,group3};
+
+		Group[] group2s = {group1, group2, group3};
 		account1.groups = group2s;
-		
-		Group [] group3s = {group1};
+
+		Group[] group3s = {group1};
 		account1.groups = group3s;
-		
-		Group [] group4s = {group3};
+
+		Group[] group4s = {group3};
 		account1.groups = group4s;
-		
-		Group [] group5s = {group2,group3};
+
+		Group[] group5s = {group2, group3};
 		account1.groups = group5s;
-		
+
 		//groupAccount
 		GroupAccount groupAccount1 = new GroupAccount();
 		groupAccount1.group_ID = group1;
-		Account [] groupAccount1s = {account1,account3,account4};
+		Account[] groupAccount1s = {account1, account3, account4};
 		groupAccount1.accountIDs = groupAccount1s;
 		groupAccount1.joinDates = new Date("2022/05/08");
-		
+
 		GroupAccount groupAccount2 = new GroupAccount();
 		groupAccount2.group_ID = group2;
-		Account [] groupAccount2s = {account2,account3,account4};
+		Account[] groupAccount2s = {account2, account3, account4};
 		groupAccount2.accountIDs = groupAccount2s;
 		groupAccount2.joinDates = new Date("2022/05/09");
-		
+
 		GroupAccount groupAccount3 = new GroupAccount();
 		groupAccount3.group_ID = group3;
-		Account [] groupAccount3s = {account1,account4,account5};
+		Account[] groupAccount3s = {account1, account4, account5};
 		groupAccount3.accountIDs = groupAccount3s;
 		groupAccount3.joinDates = new Date("2022/05/05");
-		
+
 		// TypeQuestion
 		TypeQuestion typeQuestion1 = new TypeQuestion();
 		typeQuestion1.typeId = 1;
 		typeQuestion1.typeName = TypeName.ESSAY;
-		
+
 		TypeQuestion typeQuestion2 = new TypeQuestion();
 		typeQuestion2.typeId = 2;
 		typeQuestion2.typeName = TypeName.MULTIPLE_CHOICE;
-		
+
 		// CategoryQuestion
 		CategoryQuestion categoryQuestion1 = new CategoryQuestion();
 		categoryQuestion1.categoryId = 1;
 		categoryQuestion1.categoryName = "Java";
-		
+
 		CategoryQuestion categoryQuestion2 = new CategoryQuestion();
 		categoryQuestion2.categoryId = 2;
 		categoryQuestion2.categoryName = "NET";
-		
+
 		CategoryQuestion categoryQuestion3 = new CategoryQuestion();
 		categoryQuestion3.categoryId = 3;
 		categoryQuestion3.categoryName = "SQL";
-		
+
 		CategoryQuestion categoryQuestion4 = new CategoryQuestion();
 		categoryQuestion4.categoryId = 4;
 		categoryQuestion4.categoryName = "Postman";
-		
+
 		CategoryQuestion categoryQuestion5 = new CategoryQuestion();
 		categoryQuestion5.categoryId = 5;
 		categoryQuestion5.categoryName = "Ruby";
-		
+
 		// Question
-		
+
 		Question question1 = new Question();
 		question1.questionId = 1;
 		question1.content = "Cau truc MySQL";
@@ -183,7 +183,7 @@ public class Method {
 		question1.type_ID = typeQuestion2;
 		question1.creator_ID = account2;
 		question1.createDate = new Date("2022/1/2");
-		
+
 		Question question2 = new Question();
 		question2.questionId = 2;
 		question2.content = "cac loai datatype";
@@ -191,7 +191,7 @@ public class Method {
 		question2.type_ID = typeQuestion2;
 		question2.creator_ID = account1;
 		question2.createDate = new Date("2022/1/3");
-		
+
 		Question question3 = new Question();
 		question3.questionId = 3;
 		question3.content = "toan tu like";
@@ -199,7 +199,7 @@ public class Method {
 		question3.type_ID = typeQuestion1;
 		question3.creator_ID = account5;
 		question3.createDate = new Date("2022/2/2");
-		
+
 		Question question4 = new Question();
 		question4.questionId = 4;
 		question4.content = "so sanh tinyint vs int";
@@ -207,35 +207,35 @@ public class Method {
 		question4.type_ID = typeQuestion1;
 		question4.creator_ID = account3;
 		question4.createDate = new Date("2022/5/2");
-		
+
 		// Answer
-		
+
 		Answer answer1 = new Answer();
 		answer1.answerId = 1;
 		answer1.content = "ngon ngu truy van co cau truc";
 		answer1.question_ID = question2;
 		answer1.isCorrect = true;
-		
+
 		Answer answer2 = new Answer();
 		answer2.answerId = 2;
 		answer2.content = "hoc Java";
 		answer2.question_ID = question1;
 		answer2.isCorrect = false;
-		
+
 		Answer answer3 = new Answer();
 		answer3.answerId = 3;
 		answer3.content = "store proceduce";
 		answer3.question_ID = question3;
 		answer3.isCorrect = false;
-		
+
 		Answer answer4 = new Answer();
 		answer4.answerId = 4;
 		answer4.content = "method trong Java";
 		answer4.question_ID = question4;
 		answer4.isCorrect = true;
-		
+
 		// Exam
-		
+
 		Exam exam1 = new Exam();
 		exam1.examId = 1;
 		exam1.code = 1;
@@ -244,44 +244,46 @@ public class Method {
 		exam1.duration = LocalTime.of(0, 50, 30, 0);
 		exam1.creator_Id = account1;
 		exam1.createDate = new Date("2022/01/01");
-		
+
 		Exam exam2 = new Exam();
 		exam2.examId = 2;
 		exam2.code = 2;
 		exam2.title = "tu nhien";
 		exam2.category_ID = categoryQuestion2;
-		exam2.duration =LocalTime.of(0, 45, 30, 0);;
+		exam2.duration = LocalTime.of(0, 45, 30, 0);
+		;
 		exam2.creator_Id = account2;
 		exam2.createDate = new Date("2022/01/02");
-		
+
 		Exam exam3 = new Exam();
 		exam3.examId = 3;
 		exam3.code = 3;
 		exam3.title = "lich su";
 		exam3.category_ID = categoryQuestion3;
-		exam3.duration =LocalTime.of(0, 55, 30, 0);;
+		exam3.duration = LocalTime.of(0, 55, 30, 0);
+		;
 		exam3.creator_Id = account4;
 		exam3.createDate = new Date("2022/01/03");
-		
+
 		// ExamQuestion
 		ExamQuestion examQuestion1 = new ExamQuestion();
 		examQuestion1.exam_ID = exam1;
-		Question [] questionId1s = {question1,question3,question4};
+		Question[] questionId1s = {question1, question3, question4};
 		examQuestion1.questionIDs = questionId1s;
-		
+
 		ExamQuestion examQuestion2 = new ExamQuestion();
 		examQuestion2.exam_ID = exam2;
-		Question [] questionId2s = {question2,question3,question4};
+		Question[] questionId2s = {question2, question3, question4};
 		examQuestion1.questionIDs = questionId2s;
-		
+
 		ExamQuestion examQuestion3 = new ExamQuestion();
 		examQuestion3.exam_ID = exam3;
-		Question [] questionId3s = {question1,question2};
+		Question[] questionId3s = {question1, question2};
 		examQuestion3.questionIDs = questionId3s;
 		
 		/* Question 1:
 			Tạo method để in ra các số chẵn nguyên dương nhỏ hơn 10 */
-		
+
 //		soNguyen(10);
 //		}
 //	
@@ -289,7 +291,15 @@ public class Method {
 //		for (int i = 0; i < N; i+=2) {
 //			System.out.println(i);
 //		}
-		
+//		soNguyenDuong(10);
+//	}
+//		public static void soNguyenDuong(int n) {
+//			for (int i = 0; i < n; i++){
+//				if (i%2 == 0){
+//					System.out.println(i);
+//				}
+//			}
+//		}
 		/* Question 2:
 			Tạo method để in thông tin các account */
 		

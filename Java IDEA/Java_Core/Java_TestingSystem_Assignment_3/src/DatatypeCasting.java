@@ -2,6 +2,9 @@ import java.io.BufferedOutputStream;
 import java.util.Random;
 
 public class DatatypeCasting {
+
+
+	char a;
 public static void main(String[] args) {
 	//	Question 1:
 	//		Khai báo 2 số lương có kiểu dữ liệu là float.
@@ -24,7 +27,7 @@ public static void main(String[] args) {
 	//		số 0 ở đầu cho đủ 5 chữ số)
 			
 			Random random = new Random();
-			
+
 			int a = random.nextInt(100000)+0;
 			String b = "0" + a ;
 			String c = "00" +a ;
@@ -41,6 +44,9 @@ public static void main(String[] args) {
 			}else {
 				System.out.println(e);
 			}
+
+
+
 	
 	//		Question 3:
 	//		Lấy 2 số cuối của số ở Question 2 và in ra.
@@ -49,9 +55,9 @@ public static void main(String[] args) {
 	//		Cách 2: chia lấy dư số đó cho 100
 			
 //			System.out.println("Question3 " + a);
-			String f = String.valueOf(a);
+//			String f = String.valueOf(a);
 //			System.out.println(f);
-			System.out.println(f.substring(3));
+//			System.out.println(f.substring(3));
 	//		Question 4:
 	//		Viết 1 method nhập vào 2 số nguyên a và b và trả về thương của chúng
 	

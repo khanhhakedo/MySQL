@@ -17,8 +17,8 @@ CREATE TABLE `User`(
 
 
 INSERT INTO `User` 	(`FullName`				, `Email`					, `Password`			, `ExpInYear`		, `ProSkill`		, `ProjectId`		, `Role`) 
-VALUES 				('Nguyen Khanh 1'		,'nguyenkhanh1@gmail.com'		, '1234567'			, NULL				, NULL				, '1'				, 'ADMIN'),
-					('Nguyen Khanh 2'		,'nguyenkhanh2@gmail.com'		, '1234567'			, NULL				, NULL				, '2'				, 'ADMIN'),
+VALUES 				('Nguyen Khanh 1'		,'nguyenkhanh1@gmail.com'		, 'abcd1234A'		, NULL				, NULL				, '1'				, 'ADMIN'),
+					('Nguyen Khanh 2'		,'nguyenkhanh2@gmail.com'		, 'abcd1234B'		, NULL				, NULL				, '2'				, 'ADMIN'),
 					('Nguyen Khanh 3'		,'nguyenkhanh3@gmail.com'		, '1234567'			, '5'				, NULL				, '2'				, 'MANAGER'),
                     ('Nguyen Khanh 4'		,'nguyenkhanh4@gmail.com'		, '1234567'			, '10'				, NULL				, '1'				, 'MANAGER'),
                     ('Nguyen Khanh 5'		,'nguyenkhanh5@gmail.com'		, '1234567'			, '6'				, NULL				, '1'				, 'MANAGER'),

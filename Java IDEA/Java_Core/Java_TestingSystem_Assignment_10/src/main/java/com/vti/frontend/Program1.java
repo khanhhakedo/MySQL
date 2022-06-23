@@ -10,6 +10,6 @@ public class Program1 {
 //        Basic.printPosition();
 //        Basic.createPosition("Test");
 //        Basic.updatePosition("Dev",5);
-        Basic.deletePosition(2); /* Loi ko xoa duoc vi foreign key */
+//        Basic.deletePosition(2); /* Loi ko xoa duoc vi foreign key */
     }
 }

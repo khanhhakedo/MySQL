@@ -2,345 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75aac6ff-a40b-4ef1-9ce3-a4cb5a9f41c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_5/src/com/VTI/frontend/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/backend/Contructor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/backend/Encapsulation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/backend/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/backend/QLCB.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/backend/QLTL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Answer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/CategoryQuestion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Department.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Exam.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Group.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Position.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/Question.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/TypeQuestion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/encapsulation/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/encapsulation/ex2/Circle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/encapsulation/ex2/Date.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/encapsulation/ex2/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/inheritance/CanBo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/inheritance/CongNhan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/inheritance/Gender.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/inheritance/KySu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/entity/inheritance/NhanVien.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/frontend/ContructorProgram.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/frontend/EncapsulationProgram.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/bin/com/vti/frontend/InheritanceProgram.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/backend/Abstraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/backend/Contructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/backend/Encapsulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/backend/Inheritance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/backend/QLCB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/backend/QLTL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/CategoryQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/TypeQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/abstraction/quesion2_3/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/abstraction/quesion2_3/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/abstraction/quesion2_3/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/abstraction/quesion2_3/Waiter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/abstraction/question1/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/abstraction/question1/VietnamesePhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/encapsulation/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/encapsulation/ex2/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/encapsulation/ex2/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/encapsulation/ex2/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question1_2/CanBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question1_2/CongNhan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question1_2/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question1_2/KySu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question1_2/NhanVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question3/HighSchoolStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question3/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question3/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question4/Bao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question4/Sach.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question4/TaiLieu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/entity/inheritance/question4/TapChi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/frontend/AbstractionProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/frontend/ContructorProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/frontend/EncapsulationProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Core/test/TestingSystem_Assignment_4/src/com/vti/frontend/InheritanceProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Extra_1/Extra_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/HighSchoolStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/HighSchoolStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/Students.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/hocsinh.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/Java_TestingSystem_Assignment_4/src/com/vti/entity/hocsinh.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/backend/bussinesslayer/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/backend/bussinesslayer/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/backend/datalayer/IUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/backend/datalayer/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/backend/presentationlayer/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/entity/Employee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/entity/Manager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/frontend/Program.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/frontend/UserFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/ultis/ScannerUltis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/ultis/jdbcUltis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/bin/com/vti/ultis/sqlUltis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/lib/mysql-connector-java-8.0.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/backend/bussinesslayer/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/backend/bussinesslayer/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/backend/datalayer/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/backend/datalayer/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/backend/presentationlayer/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/entity/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/frontend/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/frontend/UserFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/resources/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/ultis/ScannerUltis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/ultis/jdbcUltis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java_Core/JavaFinal_AnhQuang/JavaFinal_AnhQuang/BrSE_TestingSystem_Testing/src/com/vti/ultis/sqlUltis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java Core/FinalExam_JavaCore_NguyenKhanh/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java Core/Java_TestingSystem_Assignment_8/src/com/VTI/backend/Exercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/Java Core/Java_TestingSystem_Assignment_8/src/com/VTI/backend/Exercise2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/Java Core/Java_TestingSystem_Assignment_8/src/com/VTI/frontend/Program2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/Java Core/Java_TestingSystem_Assignment_8/src/com/VTI/frontend/Program2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVA_ECLIP/MySQL/JavaFinalExam_NguyenKhanh.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVA_ECLIP/MySQL/JavaFinalExam_NguyenKhanh.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/Extra_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/HeHoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/Sv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/bomon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/clb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/giangvien.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/lophoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/phongbanCLB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/sotinchitichluy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/tenBacHoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Extra_1/src/thoigiandaotao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java IDEA1/Java IDEA1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/Java_TestingSystem_Assignment_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/CategoryQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/ExamQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/GroupAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/TypeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/TypeQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_1/src/positionName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/Java_TestingSystem_Assignment_2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/CategoryQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/DateFomat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/ExamQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/FlowControl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/GroupAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/InputFromConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Method.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/RandomNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/SystemOutPrintf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/TypeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/TypeQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/demo/Control_Statements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_2/src/positionName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/Java_TestingSystem_Assignment_3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Boxing_Unboxing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/CategoryQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/DatatypeCasting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/DefaultValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/ExamQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/GroupAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/ObjectMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/StringBai3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/TypeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/TypeQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java_TestingSystem_Assignment_3/src/positionName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/CategoryQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/ExamQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/GroupAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Program.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/TypeName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/TypeQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_1/positionName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/CategoryQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/DateFomat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/ExamQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/FlowControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/GroupAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/InputFromConsole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Method.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Program.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/RandomNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/SystemOutPrintf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/TypeName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/TypeQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/demo/Control_Statements.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_2/positionName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Boxing_Unboxing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/CategoryQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/DatatypeCasting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/DefaultValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Exam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/ExamQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/GroupAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/ObjectMethod.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/StringBai3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/TypeName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/TypeQuestion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_TestingSystem_Assignment_3/positionName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test 4/src/java/account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test 4/test 4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test2/test2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/ca.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/src/dsa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/src/wdqqw.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wqe/wqe.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/Extra_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/HeHoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/Sv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/bomon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/clb.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/giangvien.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/lophoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/phongbanCLB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/sotinchitichluy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/tenBacHoc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Extra_1/src/thoigiandaotao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/Java_TestingSystem_Assignment_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/CategoryQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/ExamQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/GroupAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/TypeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/TypeQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_1/src/positionName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/Java_TestingSystem_Assignment_2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/CategoryQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/DateFomat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/ExamQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/FlowControl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/GroupAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/InputFromConsole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Method.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/RandomNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/SystemOutPrintf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/TypeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/TypeQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/demo/Control_Statements.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_2/src/positionName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/Java_TestingSystem_Assignment_3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Boxing_Unboxing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/CategoryQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/DatatypeCasting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/DefaultValue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Exam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/ExamQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Group.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/GroupAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/ObjectMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Position.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/StringBai3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/TypeName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/TypeQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/Java_TestingSystem_Assignment_3/src/positionName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_IntelliJ/untitled/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_TestingSystem_Assignment_1/Java_TestingSystem_Assignment_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_TestingSystem_Assignment_2/Java_TestingSystem_Assignment_2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java_TestingSystem_Assignment_3/Java_TestingSystem_Assignment_3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_2/src/FlowControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_2/src/FlowControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_2/src/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_2/src/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_2/src/RandomNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_2/src/RandomNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_3/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_3/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_3/src/DatatypeCasting.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_3/src/DatatypeCasting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_3/src/DefaultValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/Java_TestingSystem_Assignment_3/src/DefaultValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_2/FlowControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_2/FlowControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_2/Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_2/Method.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_2/RandomNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_2/RandomNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_3/DatatypeCasting.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java_Core/out/production/Java_TestingSystem_Assignment_3/DatatypeCasting.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,6 +80,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Java_Core" />
@@ -378,6 +91,19 @@
       <recent name="C:\Users\ADMIN\Documents\File bai tap\Code\Java IDEA" />
       <recent name="C:\Users\ADMIN\Documents\File bai tap\Code\Java IDEA\Java_TestingSystem_Assignment_4\.idea" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -402,6 +128,7 @@
       <workItem from="1652980369632" duration="4000" />
       <workItem from="1652980388072" duration="91000" />
       <workItem from="1652980797504" duration="73000" />
+      <workItem from="1655707336734" duration="112000" />
     </task>
     <servers />
   </component>

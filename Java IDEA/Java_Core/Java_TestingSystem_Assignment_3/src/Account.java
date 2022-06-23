@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Objects;
 
@@ -10,14 +11,7 @@ public class Account {
 	Position positionID;
 	Group[] groups;
 	Date createDate;
-//	@Override
-//	public String toString() {
-//		String result = "";
-//		result += "id: " + accountId;
-//		result += " || ";
-//		result += "name: " + email;
-//		return result ;
-//	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
@@ -32,8 +26,8 @@ public class Account {
 		result += "create: " + createDate;
 		return result ;
 	}
-	
-	
-	
+
+
+
 }
 

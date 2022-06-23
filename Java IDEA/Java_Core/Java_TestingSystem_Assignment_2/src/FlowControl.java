@@ -296,18 +296,7 @@ public static void main(String[] args) {
 			Nếu có mặt trong 3 Group thì sẽ in ra text "Nhân viên này là người quan trọng, tham gia nhiều group"
 			Nếu có mặt trong 4 group trở lên thì sẽ in ra text "Nhân viên này là người hóng chuyện, tham gia tất cả các group" */
 
-//	if (account2.groups == null) {
-//		System.out.println("Nhân viên này chưa có group");
-//	}
-//	else if ( account2.groups.length == 1 || account2.groups.length == 2 ){
-//		System.out.println("Group của nhân viên này là Java Fresher, C# Fresher");
-//	}
-//	else if (account2.groups.length == 3) {
-//		System.out.println("Nhân viên này là người quan trọng, tham gia nhiều group");
-//	}
-//	else if (account2.groups.length == 4) {
-//		System.out.println("Nhân viên này là người hóng chuyện, tham gia tất cả các group");
-//	}
+
 
 
 	// Question 3

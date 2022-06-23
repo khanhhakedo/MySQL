@@ -335,6 +335,15 @@ public class RandomNumber {
 //		Random random = new Random();
 //		int a = random.nextInt(900) +100 ;
 //		System.out.println("so nguyen ngau nhien: " + a);
-		
+
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println(" nhap du lieu:");
+		String a = scanner.nextLine();
+		System.out.println(a);
+		scanner.close();
+
 	}
+
+
 }
